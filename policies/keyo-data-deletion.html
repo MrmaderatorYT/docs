@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Видалення даних — Keyo</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .policy { max-width: 740px; margin: 0 auto; padding: 120px 24px 80px; }
+    .policy h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .policy .back-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.88rem; color: var(--text-secondary); text-decoration: none; margin-bottom: 24px; transition: color 0.2s; }
+    .policy .back-link:hover { color: var(--accent); }
+    .policy h2 { font-size: 1.15rem; font-weight: 600; margin: 32px 0 12px; letter-spacing: -0.01em; }
+    .policy p, .policy li { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; }
+    .policy p { margin-bottom: 16px; }
+    .policy ul { padding-left: 20px; margin-bottom: 16px; }
+    .policy li { margin-bottom: 6px; }
+    .policy a { color: var(--accent); text-decoration: none; }
+    .policy a:hover { text-decoration: underline; }
+    .policy strong { color: var(--text); font-weight: 600; }
+    .email-box { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); margin: 20px 0; gap: 12px; flex-wrap: wrap; }
+    .email-box span { font-size: 1.05rem; font-weight: 600; color: var(--text); word-break: break-all; }
+    .email-box a { display: inline-flex; align-items: center; gap: 6px; padding: 10px 20px; background: var(--accent); color: #fff; border-radius: var(--radius-xs); font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: background 0.2s; white-space: nowrap; }
+    .email-box a:hover { background: var(--accent-hover); text-decoration: none; }
+    .warning-box { display: flex; align-items: flex-start; gap: 12px; padding: 16px 20px; background: rgba(234, 179, 8, 0.08); border: 1px solid rgba(234, 179, 8, 0.3); border-radius: var(--radius-sm); margin: 20px 0; }
+    .warning-box svg { flex-shrink: 0; color: #eab308; margin-top: 2px; }
+    .warning-box p { margin: 0; font-size: 0.92rem; color: var(--text); line-height: 1.6; }
+    .warning-box strong { font-weight: 600; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">CyberCraft Studio</a>
+      <div class="nav-links">
+        <a href="../index.html#about" data-i18n="nav_about">Про нас</a>
+        <a href="../index.html#projects" data-i18n="nav_projects">Проєкти</a>
+        <a href="../team.html" data-i18n="nav_team">Команда</a>
+        <a href="../index.html#contact" data-i18n="nav_contact">Контакти</a>
+      </div>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+          <svg class="theme-icon-light" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="theme-icon-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </span>
+          <span id="langLabel">EN</span>
+        </button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="policy" id="policy">
+    <a href="../app-keyo.html" class="back-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      <span data-i18n="app_back">Назад до проєктів</span>
+    </a>
+
+    <h1 data-i18n="keyo_deletion_title">Видалення даних</h1>
+
+    <p data-i18n="keyo_deletion_intro">Завдяки архітектурі Zero-Knowledge, ваші дані належать виключно вам. Ми не маємо технічної можливості отримати до них доступ, оскільки вони шифруються на вашому пристрої.</p>
+
+    <h2 data-i18n="keyo_deletion_self_title">Самостійне видалення</h2>
+    <p data-i18n="keyo_deletion_self_text">Ви можете видалити всі свої дані безпосередньо з додатка Keyo в будь-який момент. Для цього відкрийте налаштування профілю та оберіть опцію видалення облікового запису.</p>
+
+    <h2 data-i18n="keyo_deletion_request_title">Запит на видалення даних</h2>
+    <p data-i18n="keyo_deletion_request_text">Якщо ви хочете видалити свій обліковий запис та пов'язані дані з серверів Firebase, надішліть запит на електронну пошту нижче.</p>
+
+    <div class="warning-box">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <p data-i18n="keyo_deletion_warning">Запит повинен бути надіслано <strong>з тієї самої адреси електронної пошти</strong>, яку ви хочете видалити. Тема листа має бути: <strong>«Видалення — [ваша пошта]</strong>». Наприклад, якщо ви хочете видалити <code>email@gmail.com</code>, лист має бути надіслано саме з <code>email@gmail.com</code> з темою <code>Видалення — email@gmail.com</code>. Запити з іншої адреси не розглядатимуться.</p>
+    </div>
+
+    <div class="email-box">
+      <span>cybercraftstudiopro@gmail.com</span>
+      <a href="mailto:cybercraftstudiopro@gmail.com?subject=%D0%92%D0%B8%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F%20%E2%80%94%20&body=%D0%91%D1%83%D0%B4%D1%8C%20%D0%BB%D0%B0%D1%81%D0%BA%D0%B0%20%D0%B2%D0%B8%D0%B4%D0%B0%D0%BB%D1%96%D1%82%D1%8C%20%D0%BC%D1%96%D0%B9%20%D0%BE%D0%B1%D0%BB%D1%96%D0%BA%D0%BE%D0%B2%D0%B8%D0%B9%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%20%D1%82%D0%B0%20%D0%B2%D1%81%D1%96%20%D0%BF%D0%BE%D0%B2%27%D1%8F%D0%B7%D0%B0%D0%BD%D1%96%20%D0%B4%D0%B0%D0%BD%D1%96.%0A%0A%D0%90%D0%B4%D1%80%D0%B5%D1%81%D0%B0%20%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D1%97%20%D0%BF%D0%BE%D1%88%D1%82%D0%B8%20%D0%BE%D0%B1%D0%BB%D1%96%D0%BA%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%83%3A%20">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span data-i18n="keyo_deletion_email_btn">Надіслати лист</span>
+      </a>
+    </div>
+
+    <h2 data-i18n="keyo_deletion_what_title">Що буде видалено</h2>
+    <ul>
+      <li data-i18n="keyo_deletion_what_auth">Ваш обліковий запис Firebase Authentication</li>
+      <li data-i18n="keyo_deletion_what_firestore">Усі дані в Cloud Firestore (зашифровані записи паролів, профіль сховища)</li>
+      <li data-i18n="keyo_deletion_what_meta">Метадані та параметри синхронізації</li>
+    </ul>
+
+    <h2 data-i18n="keyo_deletion_time_title">Терміни обробки</h2>
+    <p data-i18n="keyo_deletion_time_text">Запити обробляються протягом <strong>30 календарних днів</strong> з моменту отримання. Після видалення дані неможливо відновити.</p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">CyberCraft Studio</span>
+        <p data-i18n="footer_copy">&copy; 2025 CyberCraft Studio. Вільне ПЗ під GPL-3.0</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/MrmaderatorYT" target="_blank" rel="noopener">GitHub</a>
+        <a href="../privacy.html" data-i18n="footer_privacy">Політика конфіденційності</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../i18n.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

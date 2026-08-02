@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Політика конфіденційності — Escape from the Void</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .policy { max-width: 740px; margin: 0 auto; padding: 120px 24px 80px; }
+    .policy h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .policy .back-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.88rem; color: var(--text-secondary); text-decoration: none; margin-bottom: 24px; transition: color 0.2s; }
+    .policy .back-link:hover { color: var(--accent); }
+    .policy h2 { font-size: 1.15rem; font-weight: 600; margin: 32px 0 12px; letter-spacing: -0.01em; }
+    .policy p, .policy li { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; }
+    .policy p { margin-bottom: 16px; }
+    .policy ul { padding-left: 20px; margin-bottom: 16px; }
+    .policy li { margin-bottom: 6px; }
+    .policy a { color: var(--accent); text-decoration: none; }
+    .policy a:hover { text-decoration: underline; }
+    .policy strong { color: var(--text); font-weight: 600; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">CyberCraft Studio</a>
+      <div class="nav-links">
+        <a href="../index.html#about" data-i18n="nav_about">Про нас</a>
+        <a href="../index.html#projects" data-i18n="nav_projects">Проєкти</a>
+        <a href="../team.html" data-i18n="nav_team">Команда</a>
+        <a href="../index.html#contact" data-i18n="nav_contact">Контакти</a>
+      </div>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+          <svg class="theme-icon-light" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="theme-icon-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+          <span id="langLabel">EN</span>
+        </button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="policy" id="policy">
+    <a href="../privacy.html" class="back-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      <span data-i18n="privacy_back">Усі політики</span>
+    </a>
+    <div id="policyContent"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">CyberCraft Studio</span>
+        <p data-i18n="footer_copy">&copy; 2025 CyberCraft Studio. Вільне ПЗ під GPL-3.0</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/MrmaderatorYT" target="_blank" rel="noopener">GitHub</a>
+        <a href="../privacy.html" data-i18n="footer_privacy">Політика конфіденційності</a>
+      </div>
+    </div>
+  </footer>
+
+  <script id="mdContent" type="text/markdown">
+# Політика конфіденційності — Escape from the Void
+
+Додаток **Escape from the Void** — це піксельна action RPG для Android.
+
+## 1. Збір та використання даних
+
+Додаток працює повністю локально на вашому пристрої. Жодні особисті дані, файли проєктів або контент не збираються, не зберігаються та не передаються на сервери розробника.
+
+## 2. Що додаток не робить
+
+- не збирає особисті дані користувачів;
+- не використовує аналітику чи рекламні SDK;
+- не потребує облікового запису для роботи;
+- не продає та не передає дані третім сторонам.
+
+## 3. Зміни до цієї політики
+
+Ми можемо оновлювати цю політику. Актуальна версія буде доступна за тією ж адресою.
+
+## 4. Контакти
+
+Питання щодо політики: [cybercraftstudiopro@gmail.com](mailto:cybercraftstudiopro@gmail.com)
+  </script>
+
+  <script src="../i18n.js"></script>
+  <script src="../script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const md = document.getElementById('mdContent').textContent;
+      document.getElementById('policyContent').innerHTML = simpleMd(md);
+    });
+
+    function simpleMd(src) {
+      return src
+        .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+        .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+        .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        .replace(/`([^`]+)`/g, '<code>$1</code>')
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+        .replace(/^- (.+)$/gm, '<li>$1</li>')
+        .replace(/(<li>.*<\/li>\n?)+/g, m => '<ul>' + m + '</ul>')
+        .replace(/\n\n+/g, '</p><p>')
+        .replace(/^(?!<[hulo])(.+)$/gm, '<p>$1</p>')
+        .replace(/<p><\/p>/g, '')
+        .replace(/\n/g, '');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberCraft Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">CyberCraft Studio</a>
+      <div class="nav-links">
+        <a href="index.html#about" data-i18n="nav_about">Про нас</a>
+        <a href="index.html#projects" data-i18n="nav_projects">Проєкти</a>
+        <a href="team.html" data-i18n="nav_team">Команда</a>
+        <a href="index.html#contact" data-i18n="nav_contact">Контакти</a>
+      </div>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+          <svg class="theme-icon-light" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="theme-icon-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </span>
+          <span id="langLabel">EN</span>
+        </button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge" data-i18n="hero_badge">Неприбуткова організація</div>
+      <h1 data-i18n="hero_title">Інновації для<br><span class="accent">спільноти</span></h1>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">Створюємо вільний софт для розробників та гравців. Безкоштовно, відкрито, для кожного.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" data-i18n="hero_cta">Наші проєкти</a>
+        <a href="#about" class="btn btn-secondary" data-i18n="hero_about">Дізнатися більше</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-glow"></div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="about_label">Про нас</span>
+        <h2 data-i18n="about_title">Технології, що змінюють світ</h2>
+        <p class="section-desc" data-i18n="about_desc">Ми — команда ентузіастів, яка створює корисні інструменти для розробників та гравців. Усі наші проєкти безкоштовні та відкриті.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 data-i18n="about_mission_title">Місія</h3>
+          <p data-i18n="about_mission_text">Забезпечити кожного розробника потужними, безкоштовними інструментами для навчання та роботи.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 data-i18n="about_open_title">Відкритість</h3>
+          <p data-i18n="about_open_text">Усі проєкти з відкритим кодом під ліцензією GPL-3.0. Прозорість та довіра — наші цінності.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3 data-i18n="about_quality_title">Якість</h3>
+          <p data-i18n="about_quality_text">Ми прагнемо до найвищої якості в кожному проєкті, від UI до продуктивності.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="projects_label">Наші проєкти</span>
+        <h2 data-i18n="projects_title">Інструменти для кожного</h2>
+        <p class="section-desc" data-i18n="projects_desc">Від мобільної IDE до клієнта для Minecraft — ми створюємо те, що потрібно спільноті.</p>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <img src="assets/mint.webp" alt="Mint" class="project-icon-img">
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>Mint</h3>
+              <span class="project-badge badge-beta" data-i18n="badge_beta">Бета</span>
+            </div>
+            <p class="project-desc" data-i18n="mint_desc">Зворотна розробка на телефоні. Дизасемблер, IR, граф потоку керування і псевдо-C для ELF, APK і DEX — усе локально.</p>
+            <div class="project-links">
+              <a href="#" class="link-play link-disabled">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5V3.5c0-.85.65-1.3 1.25-.97l14.5 8.5c.6.35.6.95 0 1.3L4.25 20.97c-.6.33-1.25-.12-1.25-.47zM16 12l-10-5.8v11.6L16 12zm1-1l2.5 1.5L17 14V11z"/></svg>
+                <span data-i18n="link_coming_soon">Незабаром</span>
+              </a>
+              <a href="app-mint.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/mint.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <img src="assets/javadroid.png" alt="JavaDroid" class="project-icon-img">
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>JavaDroid</h3>
+              <span class="project-badge badge-released" data-i18n="badge_released">Випущено</span>
+            </div>
+            <p class="project-desc" data-i18n="javadroid_desc">Повноцінна Java IDE для Android. Редагуйте, компілюйте та виконуйте Java/Kotlin код просто на смартфоні.</p>
+            <div class="project-links">
+              <a href="https://play.google.com/store/apps/details?id=com.ccs.javadroid&pli=1" target="_blank" rel="noopener" class="link-play">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5V3.5c0-.85.65-1.3 1.25-.97l14.5 8.5c.6.35.6.95 0 1.3L4.25 20.97c-.6.33-1.25-.12-1.25-.47zM16 12l-10-5.8v11.6L16 12zm1-1l2.5 1.5L17 14V11z"/></svg>
+                <span data-i18n="link_play">Google Play</span>
+              </a>
+              <a href="https://github.com/MrmaderatorYT/JavaDroid" target="_blank" rel="noopener" class="link-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="app-javadroid.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/javadroid.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <img src="assets/keyo.webp" alt="Keyo" class="project-icon-img">
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>Keyo</h3>
+              <span class="project-badge badge-released" data-i18n="badge_released">Випущено</span>
+            </div>
+            <p class="project-desc" data-i18n="keyo_desc">Менеджер паролів із архітектурою Zero-Knowledge. Безпечне зберігання та хмарна синхронізація з локальним AES-256 шифруванням.</p>
+            <div class="project-links">
+              <a href="https://play.google.com/store/apps/details?id=com.ccs.keyo" target="_blank" rel="noopener" class="link-play">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                <span>Google Play</span>
+              </a>
+              <a href="https://github.com/MrmaderatorYT/Keyo" target="_blank" rel="noopener" class="link-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="app-keyo.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/keyo.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <img src="assets/omnimath.png" alt="OmniMath" class="project-icon-img">
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>OmniMath</h3>
+              <span class="project-badge badge-released" data-i18n="badge_released">Випущено</span>
+            </div>
+            <p class="project-desc" data-i18n="omnimath_desc">Графічний калькулятор для Android. Побудова графіків функцій, числові обчислення та візуалізація.</p>
+            <div class="project-links">
+              <a href="https://github.com/MrmaderatorYT/OmniMath" target="_blank" rel="noopener" class="link-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="app-omnimath.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/omnimath.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <img src="assets/craftlink.png" alt="CraftLink" class="project-icon-img">
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>CraftLink</h3>
+              <span class="project-badge badge-dev" data-i18n="badge_dev">Розробка</span>
+            </div>
+            <p class="project-desc" data-i18n="craftlink_desc">Android-клієнт для моніторингу та управління серверами Minecraft. Чат, інвентар, мінікарта та автоматичне харчування.</p>
+            <div class="project-links">
+              <a href="#" class="link-play link-disabled">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5V3.5c0-.85.65-1.3 1.25-.97l14.5 8.5c.6.35.6.95 0 1.3L4.25 20.97c-.6.33-1.25-.12-1.25-.47zM16 12l-10-5.8v11.6L16 12zm1-1l2.5 1.5L17 14V11z"/></svg>
+                <span data-i18n="link_coming_soon">Незабаром</span>
+              </a>
+              <a href="https://github.com/MrmaderatorYT/CraftLink" target="_blank" rel="noopener" class="link-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="app-craftlink.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/craftlink.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <div class="project-icon-placeholder">AH</div>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>AI Helper</h3>
+              <span class="project-badge badge-dev" data-i18n="badge_dev">Розробка</span>
+            </div>
+            <p class="project-desc" data-i18n="aihelper_desc">AI-помічник для macOS у меню-барі. Потужний асистент на базі Gemini з безпечною XPC-архітектурою та шифруванням ключів.</p>
+            <div class="project-links">
+              <a href="https://github.com/MrmaderatorYT/AI-Helper" target="_blank" rel="noopener" class="link-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="app-aihelper.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/aihelper.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <img src="assets/axis2d.webp" alt="Axis2D" class="project-icon-img">
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>Axis2D</h3>
+              <span class="project-badge badge-dev" data-i18n="badge_dev">Розробка</span>
+            </div>
+            <p class="project-desc" data-i18n="axis2d_desc">Редактор піксельної графіки для Android. Створюйте спрайти, анімації та ігрові ассети з експортом у GIF та MP4.</p>
+            <div class="project-links">
+              <a href="https://github.com/MrmaderatorYT/Axis2D" target="_blank" rel="noopener" class="link-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="app-axis2d.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/axis2d.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <img src="assets/axisanimation.webp" alt="AxisAnimation" class="project-icon-img">
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>AxisAnimation</h3>
+              <span class="project-badge badge-dev" data-i18n="badge_dev">Розробка</span>
+            </div>
+            <p class="project-desc" data-i18n="axisanimation_desc">Професійний 2D-аніматор для Android. Покадрова анімація з onion skinning, шарами та 60 FPS малюванням.</p>
+            <div class="project-links">
+              <a href="https://github.com/MrmaderatorYT/AxisAnimation" target="_blank" rel="noopener" class="link-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="app-axisanimation.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/axisanimation.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <img src="assets/axisv.webp" alt="AxisV" class="project-icon-img">
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>AxisV</h3>
+              <span class="project-badge badge-dev" data-i18n="badge_dev">Розробка</span>
+            </div>
+            <p class="project-desc" data-i18n="axisv_desc">Редактор вокселів для Android. Створюйте 3D-моделі з вокселів з OpenGL рендерингом та експортом у OBJ.</p>
+            <div class="project-links">
+              <a href="https://github.com/MrmaderatorYT/AxisV" target="_blank" rel="noopener" class="link-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="app-axisv.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/axisv.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <img src="assets/crisisdoctrine.webp" alt="Crisis Doctrine" class="project-icon-img">
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>Crisis Doctrine</h3>
+              <span class="project-badge badge-dev" data-i18n="badge_dev">Розробка</span>
+            </div>
+            <p class="project-desc" data-i18n="crisisdoctrine_desc">Покрокова текстова RPG для Android. Стратегія управління країною в стилі Hearts of Iron з текстовим сюжетом.</p>
+            <div class="project-links">
+              <a href="https://github.com/MrmaderatorYT/CrisisDoctrine" target="_blank" rel="noopener" class="link-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="app-crisisdoctrine.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/crisisdoctrine.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <img src="assets/cybertorrent.webp" alt="CyberTorrent" class="project-icon-img">
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>CyberTorrent</h3>
+              <span class="project-badge badge-dev" data-i18n="badge_dev">Розробка</span>
+            </div>
+            <p class="project-desc" data-i18n="cybertorrent_desc">BitTorrent-клієнт для Android. Власна реалізація протоколу з DHT, magnet-посиланнями та нативним SHA-1.</p>
+            <div class="project-links">
+              <a href="https://github.com/MrmaderatorYT/CyberTorrent" target="_blank" rel="noopener" class="link-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="app-cybertorrent.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/cybertorrent.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <div class="project-icon-placeholder">DL</div>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>DataLite</h3>
+              <span class="project-badge badge-dev" data-i18n="badge_dev">Розробка</span>
+            </div>
+            <p class="project-desc" data-i18n="datalite_desc">Локальна data-нотатка. Go backend + HTML5 frontend з підтримкою Python та R. Альтернатива Jupyter.</p>
+            <div class="project-links">
+              <a href="https://github.com/MrmaderatorYT/DataLite" target="_blank" rel="noopener" class="link-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="app-datalite.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/datalite.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <img src="assets/escapeformthevoid.webp" alt="Escape from the Void" class="project-icon-img">
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>Escape from the Void</h3>
+              <span class="project-badge badge-dev" data-i18n="badge_dev">Розробка</span>
+            </div>
+            <p class="project-desc" data-i18n="escape_desc">Піксельна action RPG для Android. Досліджуйте підземелля, бийте монстрів та збирайте лут у ретро-стилі.</p>
+            <div class="project-links">
+              <a href="https://github.com/MrmaderatorYT/Escapeformthevoid" target="_blank" rel="noopener" class="link-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="app-escapeformthevoid.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/escapeformthevoid.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <img src="assets/libresketch.webp" alt="LibreSketch" class="project-icon-img">
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>LibreSketch</h3>
+              <span class="project-badge badge-dev" data-i18n="badge_dev">Розробка</span>
+            </div>
+            <p class="project-desc" data-i18n="libresketch_desc">Редактор малюнків для Android. Шари, пензлі, заливка, виділення та трансформація — вільна альтернатива Photoshop.</p>
+            <div class="project-links">
+              <a href="https://github.com/MrmaderatorYT/LibreSketch" target="_blank" rel="noopener" class="link-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="app-libresketch.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/libresketch.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <img src="assets/markdowneditor.webp" alt="Markdown Editor" class="project-icon-img">
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>Markdown Editor</h3>
+              <span class="project-badge badge-dev" data-i18n="badge_dev">Розробка</span>
+            </div>
+            <p class="project-desc" data-i18n="markdowneditor_desc">Редактор Markdown для Android. Живий прев'ю, експорт у PDF/HTML та історія версій.</p>
+            <div class="project-links">
+              <a href="https://github.com/MrmaderatorYT/MarkdownEditor" target="_blank" rel="noopener" class="link-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="app-markdowneditor.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/markdowneditor.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon-wrap">
+            <img src="assets/rdroid.webp" alt="RDroid" class="project-icon-img">
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>RDroid</h3>
+              <span class="project-badge badge-dev" data-i18n="badge_dev">Розробка</span>
+            </div>
+            <p class="project-desc" data-i18n="rdroid_desc">Клон RStudio для Android. Потужне середовище для статистичних обчислень та аналізу даних.</p>
+            <div class="project-links">
+              <a href="#" class="link-play link-disabled">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5V3.5c0-.85.65-1.3 1.25-.97l14.5 8.5c.6.35.6.95 0 1.3L4.25 20.97c-.6.33-1.25-.12-1.25-.47zM16 12l-10-5.8v11.6L16 12zm1-1l2.5 1.5L17 14V11z"/></svg>
+                <span data-i18n="link_coming_soon">Незабаром</span>
+              </a>
+              <a href="#" class="link-github link-disabled">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="app-rdroid.html" class="link-readmore" data-i18n="link_readmore">Детальніше</a>
+            </div>
+            <div class="project-meta">
+              <a href="policies/rdroid.html" class="meta-link" data-i18n="link_privacy">Політика конфіденційності</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="contact_label">Контакти</span>
+        <h2 data-i18n="contact_title">Зв'яжіться з нами</h2>
+        <p class="section-desc" data-i18n="contact_desc">Ми завжди раді зворотному зв'язку, пропозиціям та допомозі від спільноти.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:cybercraftstudiopro@gmail.com" class="contact-card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span>cybercraftstudiopro@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">CyberCraft Studio</span>
+        <p data-i18n="footer_copy">&copy; 2025 CyberCraft Studio. Вільне ПЗ під GPL-3.0</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/MrmaderatorYT" target="_blank" rel="noopener">GitHub</a>
+        <a href="privacy.html" data-i18n="footer_privacy">Політика конфіденційності</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

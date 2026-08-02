@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Політики конфіденційності — CyberCraft Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .policy-hub { max-width: 740px; margin: 0 auto; padding: 120px 24px 80px; }
+    .policy-hub h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 12px; }
+    .policy-hub .subtitle { font-size: 1rem; color: var(--text-secondary); margin-bottom: 40px; }
+    .policy-list { display: flex; flex-direction: column; gap: 12px; }
+    .policy-link { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); text-decoration: none; color: var(--text); transition: var(--transition); }
+    .policy-link:hover { box-shadow: var(--shadow-md); border-color: var(--accent); transform: translateY(-1px); }
+    .policy-link-left { display: flex; flex-direction: column; gap: 4px; }
+    .policy-link-name { font-weight: 600; font-size: 1.05rem; }
+    .policy-link-desc { font-size: 0.85rem; color: var(--text-secondary); }
+    .policy-link-arrow { color: var(--text-secondary); transition: color var(--transition); }
+    .policy-link:hover .policy-link-arrow { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">CyberCraft Studio</a>
+      <div class="nav-links">
+        <a href="index.html#about" data-i18n="nav_about">Про нас</a>
+        <a href="index.html#projects" data-i18n="nav_projects">Проєкти</a>
+        <a href="team.html" data-i18n="nav_team">Команда</a>
+        <a href="index.html#contact" data-i18n="nav_contact">Контакти</a>
+      </div>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+          <svg class="theme-icon-light" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="theme-icon-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </span>
+          <span id="langLabel">EN</span>
+        </button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="policy-hub">
+    <h1 data-i18n="privacy_hub_title">Політики конфіденційності</h1>
+    <p class="subtitle" data-i18n="privacy_hub_desc">Оберіть додаток, щоб переглянути політику конфіденційності.</p>
+
+    <div class="policy-list">
+      <a href="policies/aihelper.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">AI Helper</span>
+          <span class="policy-link-desc">AI-помічник для macOS</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="policies/axis2d.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">Axis2D</span>
+          <span class="policy-link-desc">Піксельний редактор</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="policies/axisanimation.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">AxisAnimation</span>
+          <span class="policy-link-desc">2D-аніматор</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="policies/axisv.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">AxisV</span>
+          <span class="policy-link-desc">Редактор вокселів</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="policies/craftlink.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">CraftLink</span>
+          <span class="policy-link-desc">Minecraft клієнт</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="policies/crisisdoctrine.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">Crisis Doctrine</span>
+          <span class="policy-link-desc">Текстова RPG</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="policies/cybertorrent.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">CyberTorrent</span>
+          <span class="policy-link-desc">BitTorrent-клієнт</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="policies/datalite.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">DataLite</span>
+          <span class="policy-link-desc">Data-нотатка</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="policies/escapeformthevoid.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">Escape from the Void</span>
+          <span class="policy-link-desc">Action RPG</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="policies/javadroid.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">JavaDroid</span>
+          <span class="policy-link-desc">Java IDE</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="policies/keyo.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">Keyo</span>
+          <span class="policy-link-desc">Менеджер паролів</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="policies/keyo-data-deletion.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">Keyo — Видалення даних</span>
+          <span class="policy-link-desc">Запит на видалення даних</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="policies/libresketch.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">LibreSketch</span>
+          <span class="policy-link-desc">Редактор малюнків</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="policies/markdowneditor.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">Markdown Editor</span>
+          <span class="policy-link-desc">Редактор Markdown</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="policies/omnimath.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">OmniMath</span>
+          <span class="policy-link-desc">Графічний калькулятор</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="policies/mint.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">Mint</span>
+          <span class="policy-link-desc" data-i18n="mint_policy_desc">Зворотна розробка на пристрої</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <a href="policies/rdroid.html" class="policy-link">
+        <div class="policy-link-left">
+          <span class="policy-link-name">RDroid</span>
+          <span class="policy-link-desc">R-середовище для Android</span>
+        </div>
+        <svg class="policy-link-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">CyberCraft Studio</span>
+        <p data-i18n="footer_copy">&copy; 2025 CyberCraft Studio. Вільне ПЗ під GPL-3.0</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/MrmaderatorYT" target="_blank" rel="noopener">GitHub</a>
+        <a href="privacy.html" data-i18n="footer_privacy">Політика конфіденційності</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
