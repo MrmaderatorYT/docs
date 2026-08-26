@@ -69,11 +69,10 @@
   </defs>
 
   <style>
-    .studio-text { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 11px; fill: #8F877D; letter-spacing: 4px; }
-    .badge-text { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 10.5px; fill: #C9A96A; letter-spacing: 2px; text-anchor: middle; }
-    .hero-title { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 900; font-size: 64px; fill: url(#goldTitleGrad); letter-spacing: 14px; }
-    .tagline1 { font-family: 'Georgia', serif; font-size: 19px; fill: #C9A96A; }
-    .tagline2 { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 15px; fill: #A39C93; }
+    .badge-text { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 11.5px; fill: #C9A96A; letter-spacing: 2.5px; text-anchor: middle; }
+    .hero-title { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 900; font-size: 68px; fill: url(#goldTitleGrad); letter-spacing: 16px; }
+    .tagline1 { font-family: 'Georgia', serif; font-size: 20px; fill: #C9A96A; }
+    .tagline2 { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 15.5px; fill: #A39C93; }
     .card-h { font-family: 'Georgia', serif; font-weight: bold; font-size: 16px; fill: #EFEBE4; text-anchor: middle; }
     .card-q { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 11.5px; fill: #A39C93; text-anchor: middle; }
     .side-card-h { font-family: 'Georgia', serif; font-weight: bold; font-size: 13px; fill: #C5BFB6; text-anchor: middle; }
@@ -166,27 +165,21 @@
 
   <!-- RIGHT: HERO BRANDING, TYPOGRAPHY AND FEATURES -->
   <g transform="translate(525, 0)">
-    <!-- Header with Studio Logo & Category Badge -->
-    <g transform="translate(0, 68)">
-      <g transform="translate(0, -17) scale(0.22)">
-        <path fill="#C2564F" d="M51.0,21.0 A33.0,33.0 0 0,0 51.0,87.0 L51.0,77.0 A23.0,23.0 0 0,1 51.0,31.0 Z"/><path fill="#7FA86B" d="M57.0,21.0 A33.0,33.0 0 0,1 57.0,87.0 L57.0,77.0 A23.0,23.0 0 0,0 57.0,31.0 Z"/><path fill="#EFEBE4" d="M38.0,66.0 L38.0,51.0 L46.3,59.4 L54.0,46.2 L61.7,59.4 L70.0,51.0 L70.0,66.0 Z"/>
-      </g>
-      <text x="32" y="0" class="studio-text">CYBERCRAFT STUDIO</text>
-      <g transform="translate(215, -18)">
-        <rect width="245" height="28" rx="14" fill="#C9A96A" fill-opacity="0.15" stroke="#C9A96A" stroke-width="1" stroke-opacity="0.45"/>
-        <text x="122" y="18" class="badge-text">КАРТКОВА СТРАТЕГІЯ РІШЕНЬ</text>
-      </g>
+    <!-- Category Badge -->
+    <g transform="translate(0, 52)">
+      <rect width="255" height="32" rx="16" fill="#C9A96A" fill-opacity="0.15" stroke="#C9A96A" stroke-width="1" stroke-opacity="0.45"/>
+      <text x="127" y="20" class="badge-text">КАРТКОВА СТРАТЕГІЯ РІШЕНЬ</text>
     </g>
 
     <!-- Main Title -->
-    <g transform="translate(0, 165)">
+    <g transform="translate(0, 155)">
       <text x="0" y="0" class="hero-title">LOOPING</text>
     </g>
 
     <!-- Taglines -->
-    <g transform="translate(0, 222)">
+    <g transform="translate(0, 218)">
       <text x="0" y="0" class="tagline1">Керуй державою. Тримай баланс 4 сил.</text>
-      <text x="0" y="30" class="tagline2">Кожен свайп вирішує долю твоєї династії.</text>
+      <text x="0" y="32" class="tagline2">Кожен свайп вирішує долю твоєї династії.</text>
     </g>
 
     <!-- 4 Pill Badges in 2x2 Clean Grid -->
