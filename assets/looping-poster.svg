@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" width="1200" height="1600">
   <defs>
     <!-- Background and Light Gradients -->
-    <radialGradient id="bgGlow" cx="50%" cy="38%" r="65%">
+    <radialGradient id="bgGlow" cx="50%" cy="38%" r="68%">
       <stop offset="0%" stop-color="#282422"/>
       <stop offset="45%" stop-color="#181615"/>
       <stop offset="100%" stop-color="#0A0909"/>
@@ -49,33 +49,31 @@
   <style>
     .studio-text { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 14px; fill: #8F877D; letter-spacing: 6px; text-anchor: middle; }
     .badge-text { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 15px; fill: #C9A96A; letter-spacing: 3.5px; text-anchor: middle; }
-    .hero-title { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 900; font-size: 86px; fill: url(#goldTitleGrad); letter-spacing: 20px; text-anchor: middle; }
-    .tagline1 { font-family: 'Georgia', serif; font-size: 26px; fill: #C9A96A; text-anchor: middle; }
-    .tagline2 { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 20px; fill: #A39C93; text-anchor: middle; }
+    .hero-title { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 900; font-size: 92px; fill: url(#goldTitleGrad); letter-spacing: 22px; text-anchor: middle; }
+    .tagline1 { font-family: 'Georgia', serif; font-size: 28px; fill: #C9A96A; text-anchor: middle; }
+    .tagline2 { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 21px; fill: #A39C93; text-anchor: middle; }
     .card-h { font-family: 'Georgia', serif; font-weight: bold; font-size: 24px; fill: #EFEBE4; text-anchor: middle; }
     .card-q { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 17px; fill: #A39C93; text-anchor: middle; }
     .side-card-h { font-family: 'Georgia', serif; font-weight: bold; font-size: 20px; fill: #C5BFB6; text-anchor: middle; }
     .side-card-q { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 15px; fill: #7E776F; text-anchor: middle; }
     .swipe-text { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 19px; fill: #FFFFFF; text-anchor: middle; }
-    .hud-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 17px; fill: #EFEBE4; text-anchor: middle; }
-    .pill-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 18px; fill: #EFEBE4; }
-    .footer-text { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 600; font-size: 15px; fill: #6B645D; letter-spacing: 2px; text-anchor: middle; }
+    .pill-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 19px; fill: #EFEBE4; }
   </style>
 
   <!-- Background Layer -->
   <rect width="1200" height="1600" fill="url(#bgGlow)" />
 
   <!-- Ambient Light Halos -->
-  <circle cx="600" cy="540" r="480" fill="url(#goldAmbient)" />
-  <circle cx="280" cy="580" r="320" fill="url(#redSpot)" />
-  <circle cx="920" cy="580" r="320" fill="url(#greenSpot)" />
+  <circle cx="600" cy="560" r="500" fill="url(#goldAmbient)" />
+  <circle cx="280" cy="600" r="340" fill="url(#redSpot)" />
+  <circle cx="920" cy="600" r="340" fill="url(#greenSpot)" />
 
   <!-- Golden Orbit Rings (Framing the Deck) -->
-  <circle cx="600" cy="530" r="370" fill="none" stroke="#C9A96A" stroke-width="1.5" stroke-opacity="0.22" />
-  <circle cx="600" cy="530" r="395" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.08" stroke-dasharray="6,12" />
+  <circle cx="600" cy="550" r="380" fill="none" stroke="#C9A96A" stroke-width="1.5" stroke-opacity="0.22" />
+  <circle cx="600" cy="550" r="410" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.08" stroke-dasharray="6,12" />
 
   <!-- TOP BRANDING -->
-  <g transform="translate(600, 45)">
+  <g transform="translate(600, 55)">
     <!-- Actual Logo Mark from logo_mark.xml placed cleanly centered above text -->
     <g transform="translate(-18, 0) scale(0.34)">
       <path fill="#C2564F" d="M51.0,21.0 A33.0,33.0 0 0,0 51.0,87.0 L51.0,77.0 A23.0,23.0 0 0,1 51.0,31.0 Z"/><path fill="#7FA86B" d="M57.0,21.0 A33.0,33.0 0 0,1 57.0,87.0 L57.0,77.0 A23.0,23.0 0 0,0 57.0,31.0 Z"/><path fill="#EFEBE4" d="M38.0,66.0 L38.0,51.0 L46.3,59.4 L54.0,46.2 L61.7,59.4 L70.0,51.0 L70.0,66.0 Z"/>
@@ -84,7 +82,7 @@
   </g>
 
   <!-- CATEGORY BADGE -->
-  <g transform="translate(600, 135)">
+  <g transform="translate(600, 145)">
     <rect x="-200" y="0" width="400" height="40" rx="20" fill="#C9A96A" fill-opacity="0.15" stroke="#C9A96A" stroke-width="1.5" stroke-opacity="0.45"/>
     <text x="0" y="25" class="badge-text">MINIMALIST CARD DECISION STRATEGY</text>
   </g>
@@ -92,7 +90,7 @@
   <!-- 3-CARD COMPOSITION (Hero Card Hand) -->
   
   <!-- LEFT CARD: General (Tilted -8deg) -->
-  <g transform="translate(130, 260) rotate(-8, 175, 275)" filter="url(#sideShadow)">
+  <g transform="translate(130, 275) rotate(-8, 175, 275)" filter="url(#sideShadow)">
     <rect width="350" height="510" rx="26" fill="url(#sideCardGrad)" stroke="#7FA86B" stroke-width="2" stroke-opacity="0.4"/>
     <!-- Art from art_general.xml -->
     <g transform="translate(35, 30) scale(1.16)">
@@ -106,7 +104,7 @@
   </g>
 
   <!-- RIGHT CARD: Treasurer (Tilted +8deg) -->
-  <g transform="translate(720, 260) rotate(8, 175, 275)" filter="url(#sideShadow)">
+  <g transform="translate(720, 275) rotate(8, 175, 275)" filter="url(#sideShadow)">
     <rect width="350" height="510" rx="26" fill="url(#sideCardGrad)" stroke="#C6A155" stroke-width="2" stroke-opacity="0.4"/>
     <!-- Art from art_treasurer.xml -->
     <g transform="translate(35, 30) scale(1.16)">
@@ -120,7 +118,7 @@
   </g>
 
   <!-- CENTER HERO CARD: Grand Chancellor (Advisor) -->
-  <g transform="translate(370, 205)" filter="url(#heroShadow)">
+  <g transform="translate(370, 220)" filter="url(#heroShadow)">
     <!-- Card Frame -->
     <rect width="460" height="650" rx="30" fill="url(#cardGrad)" stroke="#C9A96A" stroke-width="2.5" stroke-opacity="0.6"/>
 
@@ -181,96 +179,47 @@
 
   <!-- DECISION SWIPE BADGES -->
   <!-- Left Button (Reject / Red) -->
-  <g transform="translate(235, 520)" filter="url(#buttonShadow)">
+  <g transform="translate(235, 535)" filter="url(#buttonShadow)">
     <rect width="180" height="60" rx="30" fill="#C2564F" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="2"/>
     <text x="90" y="37" class="swipe-text">← Reject</text>
   </g>
 
   <!-- Right Button (Approve / Green) -->
-  <g transform="translate(785, 520)" filter="url(#buttonShadow)">
+  <g transform="translate(785, 535)" filter="url(#buttonShadow)">
     <rect width="180" height="60" rx="30" fill="#7FA86B" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="2"/>
     <text x="90" y="37" class="swipe-text">Approve →</text>
   </g>
 
-  <!-- 4 PILLARS OF POWER HUD SHOWCASE -->
-  <g transform="translate(600, 940)">
-    <g transform="translate(-460, 0)">
-      <!-- Health Pillar -->
-      <g transform="translate(0, 0)">
-        <rect width="210" height="74" rx="20" fill="#242120" stroke="#C2564F" stroke-width="1.5" stroke-opacity="0.5"/>
-        <g transform="translate(28, 25) scale(1.0)">
-          <path fill="#FFFFFF" d="M12,21 C12,21 3,14.4 3,8.9 C3,5.9 5.4,3.6 8.4,3.6 C10.1,3.6 11.4,4.5 12,5.7 C12.6,4.5 13.9,3.6 15.6,3.6 C18.6,3.6 21,5.9 21,8.9 C21,14.4 12,21 12,21 Z"/>
-        </g>
-        <text x="120" y="43" class="hud-label">Health</text>
-      </g>
-
-      <!-- Influence Pillar -->
-      <g transform="translate(240, 0)">
-        <rect width="210" height="74" rx="20" fill="#242120" stroke="#7C9ACC" stroke-width="1.5" stroke-opacity="0.5"/>
-        <g transform="translate(28, 25) scale(1.0)">
-          <path fill="#FFFFFF" d="M2.4,6.6 L7.2,11.4 L12,3.4 L16.8,11.4 L21.6,6.6 L19.4,20.6 H4.6 Z"/>
-        </g>
-        <text x="120" y="43" class="hud-label">Influence</text>
-      </g>
-
-      <!-- Wealth Pillar -->
-      <g transform="translate(480, 0)">
-        <rect width="210" height="74" rx="20" fill="#242120" stroke="#C6A155" stroke-width="1.5" stroke-opacity="0.5"/>
-        <g transform="translate(28, 25) scale(1.0)">
-          <path fill="#FFFFFF" d="M9.6,2.4 H14.4 L13.2,5.8 C17.4,7.2 20.2,10.6 20.2,14.4 C20.2,18.4 16.5,21.6 12,21.6 C7.5,21.6 3.8,18.4 3.8,14.4 C3.8,10.6 6.6,7.2 10.8,5.8 Z"/>
-        </g>
-        <text x="120" y="43" class="hud-label">Treasury</text>
-      </g>
-
-      <!-- Security Pillar -->
-      <g transform="translate(720, 0)">
-        <rect width="200" height="74" rx="20" fill="#242120" stroke="#7FA86B" stroke-width="1.5" stroke-opacity="0.5"/>
-        <g transform="translate(28, 25) scale(1.0)">
-          <path fill="#FFFFFF" d="M12,2.2 L20.4,5.4 V11.6 C20.4,16.7 16.9,20.8 12,22.4 C7.1,20.8 3.6,16.7 3.6,11.6 V5.4 Z"/>
-        </g>
-        <text x="115" y="43" class="hud-label">Security</text>
-      </g>
-    </g>
-  </g>
-
   <!-- MAIN TYPOGRAPHY -->
-  <g transform="translate(600, 1090)">
-    <text x="10" y="0" class="hero-title">LOOPING</text>
-    <text x="0" y="60" class="tagline1">Rule the realm. Balance the 4 vital pillars.</text>
-    <text x="0" y="98" class="tagline2">Every card swipe shapes the destiny of your dynasty.</text>
+  <g transform="translate(600, 1070)">
+    <text x="11" y="0" class="hero-title">LOOPING</text>
+    <text x="0" y="70" class="tagline1">Rule the realm. Balance the 4 vital pillars.</text>
+    <text x="0" y="112" class="tagline2">Every card swipe shapes the destiny of your dynasty.</text>
   </g>
 
   <!-- FEATURE PILL BADGES -->
-  <g transform="translate(600, 1290)">
-    <g transform="translate(-460, 0)">
+  <g transform="translate(600, 1310)">
+    <g transform="translate(-480, 0)">
       <g transform="translate(0, 0)">
-        <rect width="210" height="52" rx="26" fill="#242120" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
-        <circle cx="30" cy="26" r="7" fill="#C2564F"/>
-        <text x="50" y="33" class="pill-label">100+ Events</text>
+        <rect width="220" height="56" rx="28" fill="#242120" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1.5"/>
+        <circle cx="32" cy="28" r="7.5" fill="#C2564F"/>
+        <text x="54" y="35" class="pill-label">100+ Events</text>
       </g>
-      <g transform="translate(240, 0)">
-        <rect width="210" height="52" rx="26" fill="#242120" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
-        <circle cx="30" cy="26" r="7" fill="#7C9ACC"/>
-        <text x="50" y="33" class="pill-label">4 Vital Meters</text>
+      <g transform="translate(250, 0)">
+        <rect width="220" height="56" rx="28" fill="#242120" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1.5"/>
+        <circle cx="32" cy="28" r="7.5" fill="#7C9ACC"/>
+        <text x="54" y="35" class="pill-label">4 Vital Meters</text>
       </g>
-      <g transform="translate(480, 0)">
-        <rect width="210" height="52" rx="26" fill="#242120" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
-        <circle cx="30" cy="26" r="7" fill="#C6A155"/>
-        <text x="50" y="33" class="pill-label">100% Offline</text>
+      <g transform="translate(500, 0)">
+        <rect width="220" height="56" rx="28" fill="#242120" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1.5"/>
+        <circle cx="32" cy="28" r="7.5" fill="#C6A155"/>
+        <text x="54" y="35" class="pill-label">100% Offline</text>
       </g>
-      <g transform="translate(720, 0)">
-        <rect width="200" height="52" rx="26" fill="#242120" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
-        <circle cx="30" cy="26" r="7" fill="#7FA86B"/>
-        <text x="50" y="33" class="pill-label">Zero Ads</text>
+      <g transform="translate(750, 0)">
+        <rect width="210" height="56" rx="28" fill="#242120" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1.5"/>
+        <circle cx="32" cy="28" r="7.5" fill="#7FA86B"/>
+        <text x="54" y="35" class="pill-label">Zero Ads</text>
       </g>
     </g>
-  </g>
-
-  <!-- FOOTER -->
-  <g transform="translate(600, 1470)">
-    <line x1="-320" y1="0" x2="320" y2="0" stroke="#C9A96A" stroke-opacity="0.3" stroke-width="1.5" />
-    <text x="0" y="45" class="footer-text">
-      FREE &amp; OPEN SOURCE • ANDROID 8.0+ • ZERO-KNOWLEDGE BALANCE
-    </text>
   </g>
 </svg>
