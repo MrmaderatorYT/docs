@@ -21,6 +21,7 @@
     .policy a { color: var(--accent); text-decoration: none; }
     .policy a:hover { text-decoration: underline; }
     .policy strong { color: var(--text); font-weight: 600; }
+    .policy code { background: var(--accent-light); padding: 2px 6px; border-radius: 4px; font-size: 0.88rem; }
   </style>
 </head>
 <body>
@@ -35,14 +36,33 @@
       </div>
       <div class="nav-right">
         <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
-          <svg class="theme-icon-light" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          <svg class="theme-icon-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-icon-light" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="theme-icon-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
         </button>
         <button class="lang-toggle" id="langToggle" aria-label="Switch language">
-          <span class="lang-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+          <span class="lang-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </span>
           <span id="langLabel">EN</span>
         </button>
-        <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </nav>
@@ -71,26 +91,49 @@
   <script id="mdContent" type="text/markdown">
 # Політика конфіденційності — Crisis Doctrine
 
-Додаток **Crisis Doctrine** — це покрокова текстова RPG для Android.
+Гра **Crisis Doctrine** (ідентифікатор пакета: `com.ccs.crisisdoctrine`).  
+Останнє оновлення: 27 серпня 2026.
 
-## 1. Збір та використання даних
+Цей документ пояснює принципи обробки даних у додатку **Crisis Doctrine**. Crisis Doctrine — це покрокова військово-політична стратегія для пристроїв Android, де гравець керує кризовим штабом республіки.
 
-Додаток працює повністю локально на вашому пристрої. Жодні особисті дані, файли проєктів або контент не збираються, не зберігаються та не передаються на сервери розробника.
+Головний принцип Crisis Doctrine — **повна автономність та абсолютна конфіденційність**. Гра не збирає жодних персональних даних і працює повністю локально на вашому пристрої.
 
-## 2. Що додаток не робить
+## 1. Хто відповідає за обробку
 
-- не збирає особисті дані користувачів;
-- не використовує аналітику чи рекламні SDK;
-- не потребує облікового запису для роботи;
-- не продає та не передає дані третім сторонам.
+Володільцем додатка є CyberCraft Studio. З будь-яких питань щодо цієї політики ви можете зв'язатися з нами за адресою: [cybercraftstudiopro@gmail.com](mailto:cybercraftstudiopro@gmail.com).
 
-## 3. Зміни до цієї політики
+## 2. Збір та використання даних
 
-Ми можемо оновлювати цю політику. Актуальна версія буде доступна за тією ж адресою.
+- **Повна відсутність збору даних**: Гра не збирає, не передає та не зберігає на зовнішніх серверах жодної особистої інформації, ідентифікаторів пристрою, даних про місцезнаходження чи аналітики ігрового процесу.
+- **Без реєстрації та облікових записів**: Для гри не потрібно проходити реєстрацію чи входити в обліковий запис.
+- **Без реклами та трекерів**: Гра не містить сторонніх аналітичних SDK (Google Analytics, Firebase Analytics тощо) та рекламних модулів.
 
-## 4. Контакти
+## 3. Відсутність доступу до Інтернету
 
-Питання щодо політики: [cybercraftstudiopro@gmail.com](mailto:cybercraftstudiopro@gmail.com)
+Гра Crisis Doctrine **не має дозволу на доступ до Інтернету** (`android.permission.INTERNET`) і не здійснює жодних мережевих підключень. Весь ігровий процес, розрахунки симуляції, регіони, фракції та логіка працюють повністю офлайн.
+
+## 4. Системні дозволи
+
+Гра не потребує жодних системних дозволів (доступу до сховища, контактів, камери, мікрофона чи геолокації).
+
+## 5. Збереження ігрового процесу
+
+- Стан кампанії, рівень радника, розвідані фракції та обрані налаштування зберігаються виключно локально у захищеній пам'яті додатка на вашому пристрої (`SharedPreferences` / внутрішня база даних).
+- Ці дані не передаються третім сторонам і видаляються автоматично при очищенні даних додатка або його видаленні з пристрою.
+
+## 6. Конфіденційність дітей
+
+Гра Crisis Doctrine безпечна для користувачів будь-якого віку. Ми не збираємо та не обробляємо жодних даних дітей або дорослих.
+
+## 7. Зміни до політики конфіденційності
+
+Ми можемо оновлювати цю політику в разі зміни функціоналу гри. Актуальна версія завжди розміщується на офіційному сайті CyberCraft Studio.
+
+## 8. Контакти
+
+Якщо у вас виникли запитання:
+- Email: [cybercraftstudiopro@gmail.com](mailto:cybercraftstudiopro@gmail.com)
+- GitHub: [CyberCraft Studio](https://github.com/MrmaderatorYT/CrisisDoctrine)
   </script>
 
   <script src="../i18n.js"></script>

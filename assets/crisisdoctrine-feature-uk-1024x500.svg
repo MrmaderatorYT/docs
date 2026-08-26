@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 500" width="1024" height="500">
+  <defs>
+    <!-- Dark Tactical Background Gradient -->
+    <radialGradient id="bgGlow" cx="45%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1E241F"/>
+      <stop offset="50%" stop-color="#131714"/>
+      <stop offset="100%" stop-color="#0A0C0A"/>
+    </radialGradient>
+    <radialGradient id="greenTactical" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4E6B4A" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4E6B4A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="goldAmbient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C4A45A" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#C4A45A" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="goldTitleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF5"/>
+      <stop offset="35%" stop-color="#E5CD8B"/>
+      <stop offset="100%" stop-color="#C4A45A"/>
+    </linearGradient>
+
+    <!-- Panel Gradients -->
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#232B25"/>
+      <stop offset="100%" stop-color="#181D19"/>
+    </linearGradient>
+
+    <!-- Shadows -->
+    <filter id="panelShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <style>
+    .badge-text { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 11px; fill: #C4A45A; letter-spacing: 2px; text-anchor: middle; }
+    .hero-title { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 900; font-size: 46px; fill: url(#goldTitleGrad); letter-spacing: 7px; }
+    .tagline1 { font-family: 'Georgia', serif; font-size: 19px; fill: #C4A45A; }
+    .tagline2 { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14.5px; fill: #9AA898; }
+    .hud-title { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 11px; fill: #869B84; letter-spacing: 1.5px; }
+    .hud-val { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 13px; fill: #E8EFE6; }
+    .card-title { font-family: 'Georgia', serif; font-weight: bold; font-size: 13.5px; fill: #E8EFE6; }
+    .card-sub { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10.5px; fill: #9AA898; }
+    .decree-text { font-family: 'Georgia', serif; font-size: 12px; fill: #E8EFE6; }
+    .decree-cost { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 10.5px; fill: #C4A45A; }
+    .pill-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 13px; fill: #E8EFE6; }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1024" height="500" fill="url(#bgGlow)" />
+
+  <!-- Ambient Tactical Glows -->
+  <circle cx="270" cy="250" r="300" fill="url(#greenTactical)" />
+  <circle cx="750" cy="220" r="320" fill="url(#goldAmbient)" />
+
+  <!-- Tactical Radar Circles & Crosshairs -->
+  <circle cx="260" cy="250" r="230" fill="none" stroke="#3A4D38" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="4,8"/>
+  <circle cx="260" cy="250" r="160" fill="none" stroke="#4E6B4A" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="260" y1="30" x2="260" y2="470" stroke="#3A4D38" stroke-width="1" stroke-opacity="0.2"/>
+  <line x1="40" y1="250" x2="480" y2="250" stroke="#3A4D38" stroke-width="1" stroke-opacity="0.2"/>
+
+  <!-- LEFT: TACTICAL WAR-ROOM INTERFACE COMPOSITION -->
+  <g transform="translate(48, 40)" filter="url(#panelShadow)">
+    <!-- Main Command Console Frame -->
+    <rect width="420" height="420" rx="18" fill="url(#panelGrad)" stroke="#4A5E46" stroke-width="2" stroke-opacity="0.8"/>
+
+    <!-- Top Status Bar HUD -->
+    <g transform="translate(18, 16)">
+      <rect width="384" height="44" rx="8" fill="#131714" stroke="#354432" stroke-width="1"/>
+      
+      <!-- Day -->
+      <g transform="translate(14, 12)">
+        <text x="0" y="10" class="hud-title">DAY</text>
+        <text x="0" y="24" class="hud-val">14</text>
+      </g>
+      <!-- Stability -->
+      <g transform="translate(76, 12)">
+        <text x="0" y="10" class="hud-title">STABILITY</text>
+        <text x="0" y="24" class="hud-val">76%</text>
+      </g>
+      <!-- Treasury -->
+      <g transform="translate(164, 12)">
+        <text x="0" y="10" class="hud-title">TREASURY</text>
+        <text x="0" y="24" class="hud-val" fill="#C4A45A">1,450</text>
+      </g>
+      <!-- Authority -->
+      <g transform="translate(254, 12)">
+        <text x="0" y="10" class="hud-title">AUTHORITY</text>
+        <text x="0" y="24" class="hud-val">82/100</text>
+      </g>
+      <!-- Trust -->
+      <g transform="translate(340, 12)">
+        <text x="0" y="10" class="hud-title">TRUST</text>
+        <text x="0" y="24" class="hud-val">68/100</text>
+      </g>
+    </g>
+
+    <!-- Commander Portrait & Staff Row -->
+    <g transform="translate(18, 76)">
+      <!-- Main Commander Box -->
+      <rect width="130" height="150" rx="10" fill="#151A16" stroke="#4A5E46" stroke-width="1.5"/>
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABsUlEQVR42u3dsQ3CMBQE0OyBEFQ0SDRUhCHoYYRskokoGYctoITKifSxsON30pVBwL3KSqDrREREREREREQKyWa9etVcCwIgAAgAAoAAIAAIADJ/4MvQV11AAAAAAAAAAAAAAAAAAAAAAGgJwNIHBgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtLkHS4wIgCEBUAAUAAVAAVAAvvq8j00XAAAAAAAAAAAAAAAAAAAAAAAA+HS7Oyebe4Dc7w8AAAAAAAAAAAAAAAAAAAAAAAAo5yDmcdon6yAIAAAAAAAAAAAAAAAAAAAAAAB+B2Dq+vHahxp9cAMAAAAAAAAAAAAAAAAAAAAAAABYzkGRgQEAAAAAAAAAAAAAAAAAAAAAoBwgfugRAAAAAAAAAAAAAAAAAAAAAADaGXjqjxkPt2Oy0esBAQAAAAAAAAAAAAAAAAAAAACA+QNHB4q+fnTg3IAAAAAAAAAAAAAAAAAAAAAAAKClgaNfYG4A//58AAAAAAAAAAAAAAAAAAAAAABQ0w0dWvkNJUYAwBAAKAAKgAKgAGhNAN5aPLCQA08hjAAAAABJRU5ErkJggg==" x="15" y="10" width="100" height="100" style="image-rendering: pixelated;"/>
+      <text x="65" y="126" text-anchor="middle" class="card-title">Командувач</text>
+      <text x="65" y="141" text-anchor="middle" class="card-sub">Рівень 4 • Радник</text>
+
+      <!-- Staff / Cabinet Icons -->
+      <g transform="translate(142, 0)">
+        <!-- Minister of Defense -->
+        <g transform="translate(0, 0)">
+          <rect width="76" height="70" rx="8" fill="#151A16" stroke="#354432" stroke-width="1"/>
+          <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABpUlEQVR42u3dsQ2CQBQGYPYwBitLGzvYgQFgIyayZRtrF9DWhAQSuLsc3PcnfyuR91WX51lVIiIiIiIiIiKBUl8vX91eAAAAAAAAAAAAAAAAAAAAAAA40oAfw1N3NHsgAAAAAAAAAAAAAAAAAAAAAACQEMDa8z9Tt6u5fz8AAAAAAAAAAAAAAAAAAAAAALDQocGAeIkAeJEAKAAKgAKgACgAFj7KWRgBAAAAAAAAAAAAAAAAAAAAwO8GHBS5QAIAAAAAAAAADAEABUABUPcIbgDyfo1Ft/ibQgEAAAAAAAAAAAAAAAAAAAAA4K+3e7vY2AOK/XwAAAAAAAAAAAAAAAAAAAAAAADAQRAAAAAAAAAAAAAAAAAAAAAAAAAw79g3UQsAAAAAAAAAAAAAAAAAAAAAAAA4KDJgAAAAAAAAAAAAAAAAAAAAAABID8RFjgAAAAAAAAAAAAAAAAAAAAAAUM6Ac//jRkAAAAAAAAAAAAAAAAAAAAAAsPcfboBn/3wAAAAAAAAAAAAAAAAAAAAAALCwodkAMQQADAIABUABUAAUAD0SgB+q1BTI2h48KgAAAABJRU5ErkJggg==" x="18" y="6" width="40" height="40" style="image-rendering: pixelated;"/>
+          <text x="38" y="58" text-anchor="middle" class="card-sub">Оборона</text>
+        </g>
+        <!-- Minister of Finance -->
+        <g transform="translate(84, 0)">
+          <rect width="76" height="70" rx="8" fill="#151A16" stroke="#354432" stroke-width="1"/>
+          <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABu0lEQVR42u3dMQ6CMBQGYO5hjEzGmVF3B2cnFu/DEZicPINHYjReQG/QkgApLd+f/GtTfd/U5IWqEhERERERERFZSQ773S/nmiAAAoAAIAAIAAKAACDjB9xem2CHd5e0zakOFhAAAAAAAAAAAAAAAAAAAAAAtgQg9gekHmDqFg8EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACALAHkvrhh8QQAAAAAAAAAAAAAAAAAAAAAAOYD0D9fwdbHS7Cxh5TY+Us3dr/Y74udDwAAAAAAAAAAAAAAAAAAAAAAHoIUAAVAAQAAAAAAAAAAAAAAwGKIxRAAAAAAAAAAAAAAAAAAAAAAACgZQOz8rj1Paur7AwAAAAAAAAAAAAAAAAAAAABASSn9ociXQwEAAAAAAAAAAAAAAAAAAAAAYD4gFjcAAAAAAAAAAAAAAAAAAAAAAGA7A77dH0kLCAAAAAAAAAAAAAAAAAAAAAAAjB/w0gP4foZJTX1/AAAAAAAAAAAAAAAAAAAAAADY0oBLB5A9EAAAAAAAAAAAAAAAAAAAAAAAUF8OVQAUAAVAAVAAFABdI4A/6fSq1/fS/cAAAAAASUVORK5CYII=" x="18" y="6" width="40" height="40" style="image-rendering: pixelated;"/>
+          <text x="38" y="58" text-anchor="middle" class="card-sub">Мінфін</text>
+        </g>
+        <!-- Advisor -->
+        <g transform="translate(168, 0)">
+          <rect width="74" height="70" rx="8" fill="#151A16" stroke="#354432" stroke-width="1"/>
+          <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABlklEQVR42u3dsQ2CUBSGUfYwRitKGzscwh5GcBMmYiS3gFIrA0HzvO+eL/lbY7ynIlGbRpIkSZIk6U86HQ9z5LkgAAJAAAgAASAABIDWH/gyXEMPEAAAAAAAAAAAAAAAAAAAAAAyAaj9wIAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgKX7YokjAuCQABgABoABYAAYAG97TmPqAQAAAAAAAAAAAAAAAAAAAAAAAK+d29vHlT7g3vcHAAAAAAAAAAAAAAAAAAAAAAAAeBAEAAAAAAAAAAAAAAAAAAAAAAAAbP8Ax77btdLvHwAAAAAAAAAAAAAAAAAAAAAAaqr2B0X+ORQAAAAAAAAAAAAAAAAAAAAAAL4HxA89AgAAAAAAAAAAAAAAAAAAAABAngPfH13RAQIAAAAAAAAAAAAAAAAAAAAAAOsP/OsDRH99AAAAAAAAAAAAAAAAAAAAAADIdODaAYQHAgAAAAAAAAAAAAAAAAAAAAAAlueLJ44AgEMAYAAYAAaAAWCRACyWPTMukb22mAAAAABJRU5ErkJggg==" x="17" y="6" width="40" height="40" style="image-rendering: pixelated;"/>
+          <text x="37" y="58" text-anchor="middle" class="card-sub">Радник</text>
+        </g>
+
+        <!-- Regional Sector Mini-Cards -->
+        <g transform="translate(0, 78)">
+          <rect width="242" height="72" rx="8" fill="#131714" stroke="#354432" stroke-width="1"/>
+          <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABB0lEQVR42u3dOwqEMBSG0ewjiNuQuwkX4v5rbW3zgJDkHPjbKbxfJcNMSgAAAAAAAAAAAAAAAJXOI78zzwUFgAAQAAJAAAgAAdAvgPuJoROoAAQgAAEIQAACEIAABCAAAQhAAOu8yHFgAQhAAAIQgAAEIAABCEAAAhCAANZ5kTP7BCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQAACEIAABCAAAQhAAALwhQ/rHoiHKAAPUgAmABOACcAEYAL4LeJqms9v+/zhL4IcSAAOJAAHEoADCcCBBOBAAnCgrQIwPwRpAjABmABMACYAE4D5QwgAAAAAAAAAAAAAAAAAAAAAAAAAoNgHbGBpjvYouJUAAAAASUVORK5CYII=" x="10" y="14" width="44" height="44" style="image-rendering: pixelated;"/>
+          <g transform="translate(62, 18)">
+            <text x="0" y="12" class="card-title">Столичний Округ</text>
+            <text x="0" y="28" class="card-sub">Стабільність: 84% • Повстанці: 4%</text>
+            <!-- Mini Progress Bar -->
+            <rect x="0" y="34" width="168" height="6" rx="3" fill="#2A3528"/>
+            <rect x="0" y="34" width="141" height="6" rx="3" fill="#7FA86B"/>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- Active Decree / Action Order Box -->
+    <g transform="translate(18, 240)">
+      <rect width="384" height="80" rx="10" fill="#161C17" stroke="#C4A45A" stroke-width="1.5" stroke-opacity="0.85"/>
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABdElEQVR42u3d4QlAUBSGYXtIBjOMbczmpyzAAEpK7r3neN46C/ieX1K6TpIkSZIk6WHj0B+u3gEAAAAAAAAAAAAAAAAAAAAAQMmBp3lxFe9zIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAEABwADgAHgLvcvq23BwAAAAAAAAAAAAAAAAAAAAAAAOQZGAAAAAAAAAAAAAAAAAAAAAAA/gSg9gOKPjAAAAAAAAAAAAAAAAAAAAAAAJQEkB2IgQEAAAAAAAAAAAAAAAAAAAAAoJ0PRt4OFP1FFAAAAAAAAAAAAAAAAAAAAAAAtAQgOhADAwAAAAAAAAAAAAAAAAAAAABAHAB++AAAAAAAAAAAAAAAAAAAAAAAAIAYGAAAAAAAAAAAAAAAAAAAAAAAADEwAAAAAAAAAAAAAAAAAAAAAAAAYmAAAAAAAAAAAAAAAAAAAAAAAMgPxMAAAAAAAAAAAAAAAAAAAAAAACBJkiRJkhJ2AqGtlXyvOFjfAAAAAElFTkSuQmCC" x="14" y="18" width="44" height="44" style="image-rendering: pixelated;"/>
+      <g transform="translate(68, 24)">
+        <text x="0" y="14" class="decree-text">«Ввести 3-ю бригаду для стабілізації регіону»</text>
+        <text x="0" y="38" class="decree-cost">-150 Казна • +20% Безпека • -5% Довіра</text>
+      </g>
+    </g>
+
+    <!-- Bottom Action Buttons -->
+    <g transform="translate(18, 334)">
+      <!-- Left: Refuse -->
+      <rect width="186" height="46" rx="8" fill="#542523" stroke="#C2564F" stroke-width="1.5"/>
+      <text x="93" y="28" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="13px" fill="#FFF">← Відхилити</text>
+
+      <!-- Right: Execute Order -->
+      <g transform="translate(198, 0)">
+        <rect width="186" height="46" rx="8" fill="#2E4A28" stroke="#7FA86B" stroke-width="1.5"/>
+        <text x="93" y="28" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="13px" fill="#FFF">Виконати наказ →</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT: HERO BRANDING, TYPOGRAPHY AND FEATURES -->
+  <g transform="translate(505, 0)">
+    <!-- Category Badge -->
+    <g transform="translate(0, 52)">
+      <rect width="275" height="32" rx="16" fill="#C4A45A" fill-opacity="0.15" stroke="#C4A45A" stroke-width="1" stroke-opacity="0.45"/>
+      <text x="137" y="20" class="badge-text">ВІЙСЬКОВО-ПОЛІТИЧНА СТРАТЕГІЯ</text>
+    </g>
+
+    <!-- Main Title -->
+    <g transform="translate(0, 145)">
+      <text x="0" y="0" class="hero-title">CRISIS DOCTRINE</text>
+    </g>
+
+    <!-- Taglines -->
+    <g transform="translate(0, 210)">
+      <text x="0" y="0" class="tagline1">Керуй державою під час кризи.</text>
+      <text x="0" y="32" class="tagline2">Кожен наказ має ціну, а наслідки настають через дні.</text>
+    </g>
+
+    <!-- 4 Pill Badges in 2x2 Clean Grid -->
+    <g transform="translate(0, 305)">
+      <!-- Row 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="225" height="46" rx="23" fill="#1C241E" stroke="#4E6B4A" stroke-opacity="0.3" stroke-width="1.5"/>
+        <circle cx="26" cy="23" r="6" fill="#C4A45A"/>
+        <text x="44" y="29" class="pill-label">6 Регіонів</text>
+      </g>
+      <g transform="translate(240, 0)">
+        <rect width="240" height="46" rx="23" fill="#1C241E" stroke="#4E6B4A" stroke-opacity="0.3" stroke-width="1.5"/>
+        <circle cx="26" cy="23" r="6" fill="#7FA86B"/>
+        <text x="44" y="29" class="pill-label">Повстанці &amp; Фракції</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 60)">
+        <rect width="225" height="46" rx="23" fill="#1C241E" stroke="#4E6B4A" stroke-opacity="0.3" stroke-width="1.5"/>
+        <circle cx="26" cy="23" r="6" fill="#7C9ACC"/>
+        <text x="44" y="29" class="pill-label">100% Офлайн</text>
+      </g>
+      <g transform="translate(240, 60)">
+        <rect width="240" height="46" rx="23" fill="#1C241E" stroke="#4E6B4A" stroke-opacity="0.3" stroke-width="1.5"/>
+        <circle cx="26" cy="23" r="6" fill="#C2564F"/>
+        <text x="44" y="29" class="pill-label">Без реклами</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -27,17 +27,11 @@
     .app-features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
     .app-feature { padding: 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
     .app-feature h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; }
-    .app-feature p { font-size: 0.88rem; margin: 0; }
-    .screenshots-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .screenshot { aspect-ratio: 9/16; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: var(--text-secondary); font-size: 0.85rem; }
+    .app-feature p { font-size: 0.88rem; margin: 0; color: var(--text-secondary); line-height: 1.6; }
     @media (max-width: 768px) {
       .app-hero { flex-direction: column; align-items: center; text-align: center; }
       .app-hero-links { justify-content: center; }
       .app-features-grid { grid-template-columns: 1fr; }
-      .screenshots-grid { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 480px) {
-      .screenshots-grid { grid-template-columns: 1fr; max-width: 280px; margin: 0 auto; }
     }
   </style>
 </head>
@@ -69,7 +63,7 @@
           </svg>
         </button>
         <button class="lang-toggle" id="langToggle" aria-label="Switch language">
-          <span class="lang-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+          <span class="lang-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"/></svg></span>
           <span id="langLabel">EN</span>
         </button>
         <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -85,11 +79,11 @@
       </a>
 
       <div class="app-hero">
-        <div class="app-icon-big"><img src="assets/crisisdoctrine.webp" alt="Crisis Doctrine"></div>
+        <div class="app-icon-big"><img src="assets/crisisdoctrine.png" alt="Crisis Doctrine"></div>
         <div class="app-hero-info">
-          <span class="app-badge badge-dev" data-i18n="badge_dev">Розробка</span>
+          <span class="app-badge badge-released" data-i18n="badge_released">Випущено</span>
           <h1>Crisis Doctrine</h1>
-          <p class="app-tagline" data-i18n="crisisdoctrine_desc">Покрокова текстова RPG для Android. Стратегія управління країною в стилі Hearts of Iron з текстовим сюжетом.</p>
+          <p class="app-tagline" data-i18n="crisisdoctrine_desc">Покрокова військово-політична стратегія для Android. Виступайте радником республіки, балансуйте між 6 регіонами, фракціями повстанців, казначейством та безпекою.</p>
           <div class="app-hero-links">
             <a href="https://github.com/MrmaderatorYT/CrisisDoctrine" target="_blank" rel="noopener" class="btn btn-secondary">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -101,16 +95,30 @@
       </div>
 
       <div class="app-section">
-        <h2 data-i18n="app_about_title">Про додаток</h2>
-        <p data-i18n="crisisdoctrine_desc">Покрокова текстова RPG для Android. Стратегія управління країною в стилі Hearts of Iron з текстовим сюжетом.</p>
+        <h2>Про гру</h2>
+        <p>Crisis Doctrine — це тактична покрокова військово-політична стратегія. Ви обіймаєте посаду головного радника держави в момент найглибшої кризи: республіка розвалюється, осередки повстанців підривають кордони, а ресурси казначейства обмежені.</p>
+        <p>Кожен наказ має ціну, а його наслідки настають через дні. Чи вдасться вам зберегти єдність республіки, стабілізувати 6 ключових регіонів та придушити заколот?</p>
       </div>
 
       <div class="app-section">
-        <h2 data-i18n="screenshots_title">Скріншоти</h2>
-        <div class="screenshots-grid">
-          <div class="screenshot" data-i18n="screenshot_placeholder">Скріншот 1</div>
-          <div class="screenshot" data-i18n="screenshot_placeholder2">Скріншот 2</div>
-          <div class="screenshot" data-i18n="screenshot_placeholder3">Скріншот 3</div>
+        <h2>Особливості</h2>
+        <div class="app-features-grid">
+          <div class="app-feature">
+            <h3>6 унікальних регіонів</h3>
+            <p>Управління стабільністю, рівнем загрози та інфраструктурою у Столичному окрузі, Північному кордоні, Порт-Меридіан та інших провінціях.</p>
+          </div>
+          <div class="app-feature">
+            <h3>Розвідка та повстанці</h3>
+            <p>Виявлення підпільних осередків, ідентифікація лідерів заколоту та проведення спецоперацій для їх нейтралізації.</p>
+          </div>
+          <div class="app-feature">
+            <h3>Кабінет міністрів та спеціалізації</h3>
+            <p>Взаємодія з Міністром Оборони, Міністром Фінансів та військовими комендантами для реалізації доктрин.</p>
+          </div>
+          <div class="app-feature">
+            <h3>100% Офлайн та без реклами</h3>
+            <p>Гра повністю автономна, не потребує інтернету, не містить реклами чи мікротранзакцій.</p>
+          </div>
         </div>
       </div>
     </div>
