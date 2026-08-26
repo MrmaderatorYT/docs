@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 500" width="1024" height="500">
+  <defs>
+    <!-- Background and Ambient Gradients -->
+    <radialGradient id="bgGlow" cx="45%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#282422"/>
+      <stop offset="50%" stop-color="#161413"/>
+      <stop offset="100%" stop-color="#090808"/>
+    </radialGradient>
+    <radialGradient id="goldAmbient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C9A96A" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#C9A96A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="redSpot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C2564F" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#C2564F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="greenSpot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7FA86B" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7FA86B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Meter Fill Gradients (Authentic vertical filling inside icons) -->
+    <!-- Health 60% fill -->
+    <linearGradient id="meterFillHealth" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="62%" stop-color="#C2564F"/>
+      <stop offset="62%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <!-- Influence 50% fill -->
+    <linearGradient id="meterFillInfluence" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="50%" stop-color="#7C9ACC"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <!-- Wealth 70% fill -->
+    <linearGradient id="meterFillWealth" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="68%" stop-color="#C6A155"/>
+      <stop offset="68%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <!-- Security 45% fill -->
+    <linearGradient id="meterFillSecurity" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="48%" stop-color="#7FA86B"/>
+      <stop offset="48%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2F2B29"/>
+      <stop offset="100%" stop-color="#1D1B1A"/>
+    </linearGradient>
+    <linearGradient id="sideCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#262322"/>
+      <stop offset="100%" stop-color="#171515"/>
+    </linearGradient>
+    <linearGradient id="goldTitleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E7"/>
+      <stop offset="35%" stop-color="#EED49F"/>
+      <stop offset="100%" stop-color="#C9A96A"/>
+    </linearGradient>
+
+    <!-- Shadows -->
+    <filter id="heroShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+    <filter id="sideShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="buttonShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <style>
+    .studio-text { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 11px; fill: #8F877D; letter-spacing: 4px; }
+    .badge-text { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 10.5px; fill: #C9A96A; letter-spacing: 2px; text-anchor: middle; }
+    .hero-title { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 900; font-size: 64px; fill: url(#goldTitleGrad); letter-spacing: 14px; }
+    .tagline1 { font-family: 'Georgia', serif; font-size: 19px; fill: #C9A96A; }
+    .tagline2 { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 15px; fill: #A39C93; }
+    .card-h { font-family: 'Georgia', serif; font-weight: bold; font-size: 16px; fill: #EFEBE4; text-anchor: middle; }
+    .card-q { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 11.5px; fill: #A39C93; text-anchor: middle; }
+    .side-card-h { font-family: 'Georgia', serif; font-weight: bold; font-size: 13px; fill: #C5BFB6; text-anchor: middle; }
+    .swipe-text { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 13px; fill: #FFFFFF; text-anchor: middle; }
+    .pill-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 13.5px; fill: #EFEBE4; }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1024" height="500" fill="url(#bgGlow)" />
+
+  <!-- Ambient Light Halos -->
+  <circle cx="270" cy="250" r="320" fill="url(#goldAmbient)" />
+  <circle cx="90" cy="270" r="220" fill="url(#redSpot)" />
+  <circle cx="440" cy="270" r="220" fill="url(#greenSpot)" />
+  <circle cx="750" cy="220" r="340" fill="url(#goldAmbient)" />
+
+  <!-- LEFT: 3-CARD GAMEPLAY COMPOSITION -->
+
+  <!-- LEFT CARD: General (Tilted -7deg) -->
+  <g transform="translate(60, 85) rotate(-7, 105, 160)" filter="url(#sideShadow)">
+    <rect width="210" height="320" rx="18" fill="url(#sideCardGrad)" stroke="#7FA86B" stroke-width="1.5" stroke-opacity="0.4"/>
+    <g transform="translate(25, 25) scale(0.67)">
+      <clipPath id="genClipB"><rect width="240" height="240" rx="14"/></clipPath>
+      <g clip-path="url(#genClipB)">
+        <path fill="#2B3A2E" d="M0,0 H240 V240 H0 Z"/><path fill="#8FB392" d="M120,40 A48,52 0 1,0 120.01,40 Z"/><path fill="#D8B994" d="M82,106 A10,11 0 1,0 82.01,106 Z"/><path fill="#D8B994" d="M158,106 A10,11 0 1,0 158.01,106 Z"/><path fill="#D8B994" d="M105,146 H135 V184 H105 Z"/><path fill="#E8CBA8" d="M120,70 A38,44 0 1,0 120.01,70 Z"/><path fill="#8FB392" d="M120,40 C148,40 168,62 168,92 H72 C72,62 92,40 120,40 Z"/><path fill="#39443A" d="M34,240 C38,190 73,164 120,164 C167,164 202,190 206,240 Z"/><path fill="#7CA080" d="M72,88 H168 V102 H72 Z"/><path fill="#C2564F" d="M110,14 C130,14 134,28 132,44 H110 C106,28 106,14 110,14 Z"/><path fill="#7CA080" d="M96,176 L120,196 L144,176 L144,164 H96 Z"/>
+      </g>
+    </g>
+    <text x="105" y="235" class="side-card-h">Field Marshal</text>
+  </g>
+
+  <!-- RIGHT CARD: Treasurer (Tilted +7deg) -->
+  <g transform="translate(255, 85) rotate(7, 105, 160)" filter="url(#sideShadow)">
+    <rect width="210" height="320" rx="18" fill="url(#sideCardGrad)" stroke="#C6A155" stroke-width="1.5" stroke-opacity="0.4"/>
+    <g transform="translate(25, 25) scale(0.67)">
+      <clipPath id="treClipB"><rect width="240" height="240" rx="14"/></clipPath>
+      <g clip-path="url(#treClipB)">
+        <path fill="#3A3327" d="M0,0 H240 V240 H0 Z"/><path fill="#B6ADA0" d="M120,46 A44,50 0 1,0 120.01,46 Z"/><path fill="#D8B994" d="M82,106 A10,11 0 1,0 82.01,106 Z"/><path fill="#D8B994" d="M158,106 A10,11 0 1,0 158.01,106 Z"/><path fill="#D8B994" d="M105,146 H135 V184 H105 Z"/><path fill="#E8CBA8" d="M120,70 A38,44 0 1,0 120.01,70 Z"/><path fill="#2E2A23" d="M34,240 C38,190 73,164 120,164 C167,164 202,190 206,240 Z"/><path fill="#2B2A2E" d="M70,88 C70,58 92,38 120,38 C148,38 170,58 170,88 Z"/><path fill="#C6A155" d="M66,84 H174 V98 H66 Z"/><path fill="#C6A155" d="M100,172 C106,196 114,208 120,208 C126,208 134,196 140,172 L132,168 C127,188 124,198 120,198 C116,198 113,188 108,168 Z"/><path fill="#C6A155" d="M120,206 A12,12 0 1,0 120.01,206 Z"/>
+      </g>
+    </g>
+    <text x="105" y="235" class="side-card-h">Royal Treasurer</text>
+  </g>
+
+  <!-- CENTER HERO CARD: Grand Chancellor -->
+  <g transform="translate(135, 45)" filter="url(#heroShadow)">
+    <rect width="260" height="405" rx="22" fill="url(#cardGrad)" stroke="#C9A96A" stroke-width="2" stroke-opacity="0.65"/>
+
+    <!-- Authentic Resource Meters (Color fill inside icon, no background circles) -->
+    <!-- Health -->
+    <g transform="translate(18, 14) scale(1.25)">
+      <path fill="url(#meterFillHealth)" d="M12,21 C12,21 3,14.4 3,8.9 C3,5.9 5.4,3.6 8.4,3.6 C10.1,3.6 11.4,4.5 12,5.7 C12.6,4.5 13.9,3.6 15.6,3.6 C18.6,3.6 21,5.9 21,8.9 C21,14.4 12,21 12,21 Z"/>
+    </g>
+    <!-- Influence -->
+    <g transform="translate(84, 14) scale(1.25)">
+      <path fill="url(#meterFillInfluence)" d="M2.4,6.6 L7.2,11.4 L12,3.4 L16.8,11.4 L21.6,6.6 L19.4,20.6 H4.6 Z"/>
+    </g>
+    <!-- Wealth -->
+    <g transform="translate(150, 14) scale(1.25)">
+      <path fill="url(#meterFillWealth)" d="M9.6,2.4 H14.4 L13.2,5.8 C17.4,7.2 20.2,10.6 20.2,14.4 C20.2,18.4 16.5,21.6 12,21.6 C7.5,21.6 3.8,18.4 3.8,14.4 C3.8,10.6 6.6,7.2 10.8,5.8 Z"/>
+    </g>
+    <!-- Security -->
+    <g transform="translate(214, 14) scale(1.25)">
+      <path fill="url(#meterFillSecurity)" d="M12,2.2 L20.4,5.4 V11.6 C20.4,16.7 16.9,20.8 12,22.4 C7.1,20.8 3.6,16.7 3.6,11.6 V5.4 Z"/>
+    </g>
+
+    <!-- Advisor Art -->
+    <g transform="translate(26, 56) scale(0.86)">
+      <clipPath id="advClipB"><rect width="240" height="240" rx="12"/></clipPath>
+      <g clip-path="url(#advClipB)">
+        <path fill="#3A3040" d="M0,0 H240 V240 H0 Z"/><path fill="#302E3C" d="M120,36 A54,60 0 1,0 120.01,36 Z"/><path fill="#D8B994" d="M82,106 A10,11 0 1,0 82.01,106 Z"/><path fill="#D8B994" d="M158,106 A10,11 0 1,0 158.01,106 Z"/><path fill="#D8B994" d="M105,146 H135 V184 H105 Z"/><path fill="#E8CBA8" d="M120,70 A38,44 0 1,0 120.01,70 Z"/><path fill="#302E3C" d="M120,36 C154,36 174,64 174,100 C168,84 150,74 120,74 C90,74 72,84 66,100 C66,64 86,36 120,36 Z"/><path fill="#2A2833" d="M34,240 C38,190 73,164 120,164 C167,164 202,190 206,240 Z"/><path fill="#8FBFA6" d="M96,170 L120,206 L144,170 L134,164 L120,186 L106,164 Z"/>
+      </g>
+    </g>
+
+    <text x="130" y="305" class="card-h">Grand Chancellor</text>
+    <text x="130" y="336" class="card-q">“The treasury needs urgent taxes</text>
+    <text x="130" y="356" class="card-q">to fortify the royal garrison!”</text>
+  </g>
+
+  <!-- DECISION SWIPE BADGES -->
+  <!-- Left Button (Reject / Red) -->
+  <g transform="translate(55, 235)" filter="url(#buttonShadow)">
+    <rect width="115" height="42" rx="21" fill="#C2564F" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1.5"/>
+    <text x="57" y="26" class="swipe-text">← Reject</text>
+  </g>
+
+  <!-- Right Button (Approve / Green) -->
+  <g transform="translate(360, 235)" filter="url(#buttonShadow)">
+    <rect width="115" height="42" rx="21" fill="#7FA86B" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1.5"/>
+    <text x="57" y="26" class="swipe-text">Approve →</text>
+  </g>
+
+  <!-- RIGHT: HERO BRANDING, TYPOGRAPHY AND FEATURES -->
+  <g transform="translate(525, 0)">
+    <!-- Header with Studio Logo & Category Badge -->
+    <g transform="translate(0, 68)">
+      <g transform="translate(0, -17) scale(0.22)">
+        <path fill="#C2564F" d="M51.0,21.0 A33.0,33.0 0 0,0 51.0,87.0 L51.0,77.0 A23.0,23.0 0 0,1 51.0,31.0 Z"/><path fill="#7FA86B" d="M57.0,21.0 A33.0,33.0 0 0,1 57.0,87.0 L57.0,77.0 A23.0,23.0 0 0,0 57.0,31.0 Z"/><path fill="#EFEBE4" d="M38.0,66.0 L38.0,51.0 L46.3,59.4 L54.0,46.2 L61.7,59.4 L70.0,51.0 L70.0,66.0 Z"/>
+      </g>
+      <text x="32" y="0" class="studio-text">CYBERCRAFT STUDIO</text>
+      <g transform="translate(215, -18)">
+        <rect width="245" height="28" rx="14" fill="#C9A96A" fill-opacity="0.15" stroke="#C9A96A" stroke-width="1" stroke-opacity="0.45"/>
+        <text x="122" y="18" class="badge-text">CARD DECISION STRATEGY</text>
+      </g>
+    </g>
+
+    <!-- Main Title -->
+    <g transform="translate(0, 165)">
+      <text x="0" y="0" class="hero-title">LOOPING</text>
+    </g>
+
+    <!-- Taglines -->
+    <g transform="translate(0, 222)">
+      <text x="0" y="0" class="tagline1">Rule the realm. Balance the 4 vital pillars.</text>
+      <text x="0" y="30" class="tagline2">Every card swipe shapes the destiny of your dynasty.</text>
+    </g>
+
+    <!-- 4 Pill Badges in 2x2 Clean Grid -->
+    <g transform="translate(0, 310)">
+      <!-- Row 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="220" height="46" rx="23" fill="#242120" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1.5"/>
+        <circle cx="26" cy="23" r="6" fill="#C2564F"/>
+        <text x="44" y="29" class="pill-label">100+ Events</text>
+      </g>
+      <g transform="translate(235, 0)">
+        <rect width="220" height="46" rx="23" fill="#242120" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1.5"/>
+        <circle cx="26" cy="23" r="6" fill="#7C9ACC"/>
+        <text x="44" y="29" class="pill-label">4 Vital Meters</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 60)">
+        <rect width="220" height="46" rx="23" fill="#242120" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1.5"/>
+        <circle cx="26" cy="23" r="6" fill="#C6A155"/>
+        <text x="44" y="29" class="pill-label">100% Offline</text>
+      </g>
+      <g transform="translate(235, 60)">
+        <rect width="220" height="46" rx="23" fill="#242120" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1.5"/>
+        <circle cx="26" cy="23" r="6" fill="#7FA86B"/>
+        <text x="44" y="29" class="pill-label">Zero Ads</text>
+      </g>
+    </g>
+  </g>
+</svg>
