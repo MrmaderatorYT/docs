@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" width="1200" height="1600">
   <defs>
-    <!-- Background and Light Gradients -->
+    <!-- Background and Ambient Gradients -->
     <radialGradient id="bgGlow" cx="50%" cy="38%" r="68%">
       <stop offset="0%" stop-color="#282422"/>
       <stop offset="45%" stop-color="#181615"/>
@@ -19,6 +19,28 @@
       <stop offset="100%" stop-color="#7FA86B" stop-opacity="0"/>
     </radialGradient>
 
+    <!-- Meter Fill Gradients (Authentic vertical filling inside icons) -->
+    <!-- Health 60% fill -->
+    <linearGradient id="meterFillHealth" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="62%" stop-color="#C2564F"/>
+      <stop offset="62%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <!-- Influence 50% fill -->
+    <linearGradient id="meterFillInfluence" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="50%" stop-color="#7C9ACC"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <!-- Wealth 70% fill -->
+    <linearGradient id="meterFillWealth" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="68%" stop-color="#C6A155"/>
+      <stop offset="68%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <!-- Security 45% fill -->
+    <linearGradient id="meterFillSecurity" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="48%" stop-color="#7FA86B"/>
+      <stop offset="48%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+    </linearGradient>
+
     <!-- Card Gradients -->
     <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#2F2B29"/>
@@ -34,7 +56,7 @@
       <stop offset="100%" stop-color="#C9A96A"/>
     </linearGradient>
 
-    <!-- High-Definition Shadows -->
+    <!-- Shadows -->
     <filter id="heroShadow" x="-30%" y="-30%" width="160%" height="160%">
       <feDropShadow dx="0" dy="32" stdDeviation="36" flood-color="#000000" flood-opacity="0.75"/>
     </filter>
@@ -68,13 +90,12 @@
   <circle cx="280" cy="600" r="340" fill="url(#redSpot)" />
   <circle cx="920" cy="600" r="340" fill="url(#greenSpot)" />
 
-  <!-- Golden Orbit Rings (Framing the Deck) -->
+  <!-- Golden Orbit Rings -->
   <circle cx="600" cy="550" r="380" fill="none" stroke="#C9A96A" stroke-width="1.5" stroke-opacity="0.22" />
   <circle cx="600" cy="550" r="410" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.08" stroke-dasharray="6,12" />
 
   <!-- TOP BRANDING -->
   <g transform="translate(600, 55)">
-    <!-- Actual Logo Mark from logo_mark.xml placed cleanly centered above text -->
     <g transform="translate(-18, 0) scale(0.34)">
       <path fill="#C2564F" d="M51.0,21.0 A33.0,33.0 0 0,0 51.0,87.0 L51.0,77.0 A23.0,23.0 0 0,1 51.0,31.0 Z"/><path fill="#7FA86B" d="M57.0,21.0 A33.0,33.0 0 0,1 57.0,87.0 L57.0,77.0 A23.0,23.0 0 0,0 57.0,31.0 Z"/><path fill="#EFEBE4" d="M38.0,66.0 L38.0,51.0 L46.3,59.4 L54.0,46.2 L61.7,59.4 L70.0,51.0 L70.0,66.0 Z"/>
     </g>
@@ -87,7 +108,7 @@
     <text x="0" y="25" class="badge-text">MINIMALIST CARD DECISION STRATEGY</text>
   </g>
 
-  <!-- 3-CARD COMPOSITION (Hero Card Hand) -->
+  <!-- 3-CARD COMPOSITION -->
   
   <!-- LEFT CARD: General (Tilted -8deg) -->
   <g transform="translate(130, 275) rotate(-8, 175, 275)" filter="url(#sideShadow)">
@@ -122,49 +143,29 @@
     <!-- Card Frame -->
     <rect width="460" height="650" rx="30" fill="url(#cardGrad)" stroke="#C9A96A" stroke-width="2.5" stroke-opacity="0.6"/>
 
-    <!-- 4 Resource Meters on Top of Card -->
-    <!-- Health (Heart) -->
-    <g transform="translate(58, 44)">
-      <circle cx="0" cy="0" r="20" fill="#232120" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1.5"/>
-      <path d="M0,-20 A20,20 0 1,1 -14,14 L0,0 Z" fill="#C2564F"/>
-      <circle cx="0" cy="0" r="8" fill="#1D1B1A"/>
-      <g transform="translate(-10, -10) scale(0.83)">
-        <path fill="#FFFFFF" d="M12,21 C12,21 3,14.4 3,8.9 C3,5.9 5.4,3.6 8.4,3.6 C10.1,3.6 11.4,4.5 12,5.7 C12.6,4.5 13.9,3.6 15.6,3.6 C18.6,3.6 21,5.9 21,8.9 C21,14.4 12,21 12,21 Z"/>
-      </g>
+    <!-- AUTHENTIC RESOURCE METERS (Color fills inside the icons, no circles) -->
+    <!-- Health (Heart) filled with #C2564F -->
+    <g transform="translate(44, 25) scale(1.75)">
+      <path fill="url(#meterFillHealth)" d="M12,21 C12,21 3,14.4 3,8.9 C3,5.9 5.4,3.6 8.4,3.6 C10.1,3.6 11.4,4.5 12,5.7 C12.6,4.5 13.9,3.6 15.6,3.6 C18.6,3.6 21,5.9 21,8.9 C21,14.4 12,21 12,21 Z"/>
     </g>
 
-    <!-- Influence (Crown) -->
-    <g transform="translate(172, 44)">
-      <circle cx="0" cy="0" r="20" fill="#232120" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1.5"/>
-      <path d="M0,-20 A20,20 0 1,1 -20,0 L0,0 Z" fill="#7C9ACC"/>
-      <circle cx="0" cy="0" r="8" fill="#1D1B1A"/>
-      <g transform="translate(-10, -10) scale(0.83)">
-        <path fill="#FFFFFF" d="M2.4,6.6 L7.2,11.4 L12,3.4 L16.8,11.4 L21.6,6.6 L19.4,20.6 H4.6 Z"/>
-      </g>
+    <!-- Influence (Crown) filled with #7C9ACC -->
+    <g transform="translate(158, 25) scale(1.75)">
+      <path fill="url(#meterFillInfluence)" d="M2.4,6.6 L7.2,11.4 L12,3.4 L16.8,11.4 L21.6,6.6 L19.4,20.6 H4.6 Z"/>
     </g>
 
-    <!-- Wealth (Coin) -->
-    <g transform="translate(288, 44)">
-      <circle cx="0" cy="0" r="20" fill="#232120" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1.5"/>
-      <path d="M0,-20 A20,20 0 0,1 20,0 L0,0 Z" fill="#C6A155"/>
-      <circle cx="0" cy="0" r="8" fill="#1D1B1A"/>
-      <g transform="translate(-10, -10) scale(0.83)">
-        <path fill="#FFFFFF" d="M9.6,2.4 H14.4 L13.2,5.8 C17.4,7.2 20.2,10.6 20.2,14.4 C20.2,18.4 16.5,21.6 12,21.6 C7.5,21.6 3.8,18.4 3.8,14.4 C3.8,10.6 6.6,7.2 10.8,5.8 Z"/>
-      </g>
+    <!-- Wealth (Coin) filled with #C6A155 -->
+    <g transform="translate(272, 25) scale(1.75)">
+      <path fill="url(#meterFillWealth)" d="M9.6,2.4 H14.4 L13.2,5.8 C17.4,7.2 20.2,10.6 20.2,14.4 C20.2,18.4 16.5,21.6 12,21.6 C7.5,21.6 3.8,18.4 3.8,14.4 C3.8,10.6 6.6,7.2 10.8,5.8 Z"/>
     </g>
 
-    <!-- Security (Shield) -->
-    <g transform="translate(402, 44)">
-      <circle cx="0" cy="0" r="20" fill="#232120" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1.5"/>
-      <path d="M0,-20 A20,20 0 1,1 0,20 L0,0 Z" fill="#7FA86B"/>
-      <circle cx="0" cy="0" r="8" fill="#1D1B1A"/>
-      <g transform="translate(-10, -10) scale(0.83)">
-        <path fill="#FFFFFF" d="M12,2.2 L20.4,5.4 V11.6 C20.4,16.7 16.9,20.8 12,22.4 C7.1,20.8 3.6,16.7 3.6,11.6 V5.4 Z"/>
-      </g>
+    <!-- Security (Shield) filled with #7FA86B -->
+    <g transform="translate(386, 25) scale(1.75)">
+      <path fill="url(#meterFillSecurity)" d="M12,2.2 L20.4,5.4 V11.6 C20.4,16.7 16.9,20.8 12,22.4 C7.1,20.8 3.6,16.7 3.6,11.6 V5.4 Z"/>
     </g>
 
     <!-- Advisor Art from art_advisor.xml -->
-    <g transform="translate(50, 85) scale(1.5)">
+    <g transform="translate(50, 92) scale(1.5)">
       <clipPath id="advClip"><rect width="240" height="240" rx="16"/></clipPath>
       <g clip-path="url(#advClip)">
         <path fill="#3A3040" d="M0,0 H240 V240 H0 Z"/><path fill="#302E3C" d="M120,36 A54,60 0 1,0 120.01,36 Z"/><path fill="#D8B994" d="M82,106 A10,11 0 1,0 82.01,106 Z"/><path fill="#D8B994" d="M158,106 A10,11 0 1,0 158.01,106 Z"/><path fill="#D8B994" d="M105,146 H135 V184 H105 Z"/><path fill="#E8CBA8" d="M120,70 A38,44 0 1,0 120.01,70 Z"/><path fill="#302E3C" d="M120,36 C154,36 174,64 174,100 C168,84 150,74 120,74 C90,74 72,84 66,100 C66,64 86,36 120,36 Z"/><path fill="#2A2833" d="M34,240 C38,190 73,164 120,164 C167,164 202,190 206,240 Z"/><path fill="#8FBFA6" d="M96,170 L120,206 L144,170 L134,164 L120,186 L106,164 Z"/>
