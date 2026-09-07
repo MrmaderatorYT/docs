@@ -85,7 +85,7 @@
       </a>
 
       <div class="app-hero">
-        <div class="app-icon-big"><img src="assets/cybertorrent.webp" alt="CyberTorrent"></div>
+        <div class="app-icon-big"><img src="assets/cybertorrent.png" alt="CyberTorrent"></div>
         <div class="app-hero-info">
           <span class="app-badge badge-dev" data-i18n="badge_dev">Розробка</span>
           <h1>CyberTorrent</h1>
@@ -102,7 +102,38 @@
 
       <div class="app-section">
         <h2 data-i18n="app_about_title">Про додаток</h2>
-        <p data-i18n="cybertorrent_desc">BitTorrent-клієнт для Android. Власна реалізація протоколу з DHT, magnet-посиланнями та нативним SHA-1.</p>
+        <p>CyberTorrent — це повністю незалежний, відкритий BitTorrent-клієнт для Android. На відміну від більшості клієнтів, які використовують сторонні закриті бібліотеки чи важкі C++ обгортки (libtorrent), рушій CyberTorrent спроєктовано з нуля на чистій Java з акцентом на прозорість, легкість та автономність.</p>
+        <p>Додаток забезпечує надійне завантаження та роздачу файлів у фоновому режимі з підтримкою magnet-посилань, безтрекерного пошуку бенкетів (DHT), шифрування трафіку та низького споживання батареї.</p>
+      </div>
+
+      <div class="app-section">
+        <h2>Можливості</h2>
+        <div class="app-features-grid">
+          <div class="app-feature">
+            <h3>Власний BitTorrent-рушій</h3>
+            <p>Повна реалізація протоколу обміну файлами, кастомний Bencode парсер, черга завантажень та обмеження швидкості.</p>
+          </div>
+          <div class="app-feature">
+            <h3>Magnet-посилання та DHT</h3>
+            <p>Завантаження без .torrent файлів через magnet-URI та безтрекерна мережа Kademlia DHT для пошуку пірів.</p>
+          </div>
+          <div class="app-feature">
+            <h3>PEX та Local Service Discovery</h3>
+            <p>Peer Exchange (BEP 11) для швидкого обміну списками пірів та LSD (BEP 14) для надшвидкої передачі в локальній мережі.</p>
+          </div>
+          <div class="app-feature">
+            <h3>Шифрування трафіку (MSE / PE)</h3>
+            <p>Message Stream Encryption для захисту від обмеження або блокування торрент-трафіку інтернет-провайдерами.</p>
+          </div>
+          <div class="app-feature">
+            <h3>Вибірковість файлів та пріоритети</h3>
+            <p>Можливість завантажувати лише обрані файли з торрента, змінювати пріоритети та вмикати послідовний режим.</p>
+          </div>
+          <div class="app-feature">
+            <h3>Фонова служба та UPnP / SOCKS5</h3>
+            <p>Стабільна робота у фоні через Android Foreground Service, автоматичне прокидання портів UPnP та підтримка проксі.</p>
+          </div>
+        </div>
       </div>
 
       <div class="app-section">
