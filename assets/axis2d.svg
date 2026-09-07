@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 108 108">
+  <defs>
+    <clipPath id="squircle">
+      <rect x="0" y="0" width="108" height="108" rx="24" ry="24"/>
+    </clipPath>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#squircle)">
+    <!-- Background -->
+    <rect width="108" height="108" fill="#171A21"/>
+
+    <!-- Pixel Grid Overlay -->
+    <g stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="1">
+      <path d="M9 0V108M18 0V108M27 0V108M36 0V108M45 0V108M54 0V108M63 0V108M72 0V108M81 0V108M90 0V108M99 0V108"/>
+      <path d="M0 9H108M0 18H108M0 27H108M0 36H108M0 45H108M0 54H108M0 63H108M0 72H108M0 81H108M0 90H108M0 99H108"/>
+    </g>
+
+    <!-- Subtle radial glow behind the mark -->
+    <circle cx="58" cy="54" r="30" fill="#7C93F7" opacity="0.12" filter="blur(8px)"/>
+
+    <!-- Mark inside the adaptive safe zone -->
+    <g transform="translate(54 54) scale(0.9) translate(-60.5 -52.5)" filter="url(#glow)">
+      <!-- Gradient pixel blocks -->
+      <g>
+        <rect x="33" y="71" width="10" height="10" rx="0.5" fill="#5BD1C4"/>
+        <rect x="44" y="60" width="10" height="10" rx="0.5" fill="#57B0EA"/>
+        <rect x="55" y="49" width="10" height="10" rx="0.5" fill="#7C93F7"/>
+        <rect x="66" y="38" width="10" height="10" rx="0.5" fill="#A87BF0"/>
+        <rect x="77" y="27" width="10" height="10" rx="0.5" fill="#E76DC6"/>
+      </g>
+      <!-- Axes lines -->
+      <g fill="none" stroke="#DCE0EA" stroke-width="3.5" stroke-linecap="round">
+        <path d="M27 86V25"/>
+        <path d="M27 86H88"/>
+      </g>
+      <!-- Axes arrows -->
+      <g fill="#DCE0EA">
+        <path d="M27 19l5.5 9.5h-11z"/>
+        <path d="M94 86l-9.5 5.5v-11z"/>
+      </g>
+    </g>
+  </g>
+</svg>
