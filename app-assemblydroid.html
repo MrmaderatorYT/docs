@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AxisV — CyberCraft Studio</title>
+  <title>AssemblyDroid — CyberCraft Studio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,7 +69,7 @@
           </svg>
         </button>
         <button class="lang-toggle" id="langToggle" aria-label="Switch language">
-          <span class="lang-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+          <span class="lang-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"/></svg></span>
           <span id="langLabel">EN</span>
         </button>
         <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -85,57 +85,53 @@
       </a>
 
       <div class="app-hero">
-        <div class="app-icon-big"><img src="assets/axisv.png" alt="AxisV"></div>
+        <div class="app-icon-big"><img src="assets/assemblydroid.png" alt="AssemblyDroid"></div>
         <div class="app-hero-info">
           <span class="app-badge badge-dev" data-i18n="badge_dev">Розробка</span>
-          <h1>AxisV</h1>
-          <p class="app-tagline" data-i18n="axisv_desc">Редактор вокселів для Android. Створюйте 3D-моделі з вокселів з OpenGL рендерингом та експортом у OBJ.</p>
+          <h1>AssemblyDroid</h1>
+          <p class="app-tagline" data-i18n="assemblydroid_tagline">Повноцінна асемблерна IDE для Android. Компіляція та запуск ARM64, ARM32, Thumb-2, x86 та x86-64 безпосередньо на смартфоні.</p>
           <div class="app-hero-links">
-            <a href="#" class="btn btn-primary link-disabled">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5V3.5c0-.85.65-1.3 1.25-.97l14.5 8.5c.6.35.6.95 0 1.3L4.25 20.97c-.6.33-1.25-.12-1.25-.47zM16 12l-10-5.8v11.6L16 12zm1-1l2.5 1.5L17 14V11z"/></svg>
-              <span data-i18n="link_coming_soon">Незабаром</span>
-            </a>
-            <a href="https://github.com/MrmaderatorYT/AxisV" target="_blank" rel="noopener" class="btn btn-secondary">
+            <a href="https://github.com/MrmaderatorYT/AssemblyDroid" target="_blank" rel="noopener" class="btn btn-secondary">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
               GitHub
             </a>
-            <a href="policies/axisv.html" class="btn btn-secondary" data-i18n="link_privacy">Політика конфіденційності</a>
+            <a href="policies/assemblydroid.html" class="btn btn-secondary" data-i18n="link_privacy">Політика конфіденційності</a>
           </div>
         </div>
       </div>
 
       <div class="app-section">
-        <h2 data-i18n="app_about_title">Про додаток</h2>
-        <p>AxisV — це автономний мобільний 3D-редактор вокселів, написаний на чистій Java 11 без важких сторонніх ігрових рушіїв. Спроєктований для комфортного моделювання, піксель-арту у 3D та швидкого створення ассетів для ігор прямо на телефоні або планшеті.</p>
-        <p>Додаток забезпечує плавний рендеринг у реальному часі через OpenGL ES 3.0 та підтримує експорт моделей у стандартні формати Wavefront OBJ та MagicaVoxel VOX.</p>
+        <h2 data-i18n="assemblydroid_about_title">Про додаток</h2>
+        <p data-i18n="assemblydroid_about_p1">AssemblyDroid — це автономне середовище розробки на мовах асемблера для Android. Створене на базі перевіреної архітектури JavaDroid, воно забезпечує комфортну роботу з низькорівневим кодом без необхідності встановлювати Termux, отримувати root-доступ чи підключатися до мережі.</p>
+        <p data-i18n="assemblydroid_about_p2">Додаток містить вбудований нативний LLVM MC 23.1.0 для генерації об'єктних файлів ELF (ARM64, ARM32, Thumb-2), а також FASM 2 через сумісний емулятор Blink. Підтримується підсвічування коду, точні координати помилок у панелі Problems, 5 шаблонів проєктів та детальна вбудована офлайн-довідка.</p>
       </div>
 
       <div class="app-section">
-        <h2>Можливості</h2>
+        <h2 data-i18n="assemblydroid_features_title">Можливості</h2>
         <div class="app-features-grid">
           <div class="app-feature">
-            <h3>Чанкове сховище світу</h3>
-            <p>Необмежений за об'ємом простір для творчості з динамічним виділенням чанків (16×16×16) та оптимізацією пам'яті.</p>
+            <h3 data-i18n="assemblydroid_f_llvm">LLVM MC 23.1.0</h3>
+            <p data-i18n="assemblydroid_f_llvm_desc">Нативна трансляція ARM64 (AArch64), ARM32 та Thumb-2 у файли ELF .o безпосередньо на пристрої</p>
           </div>
           <div class="app-feature">
-            <h3>OpenGL ES 3.0 рендерер</h3>
-            <p>Власний графічний рушій із фоновим мешингом чанків (ChunkMesher), динамічним освітленням та шейдерами.</p>
+            <h3 data-i18n="assemblydroid_f_fasm">FASM 2 та Blink</h3>
+            <p data-i18n="assemblydroid_f_fasm_desc">Підтримка синтаксису x86 та x86-64 через fasmg та середовище Blink з експортом у двійковий формат</p>
           </div>
           <div class="app-feature">
-            <h3>Експорт у OBJ та VOX</h3>
-            <p>Миттєвий експорт у формати Wavefront (.obj + .mtl) для Blender/Unity та сумісність із MagicaVoxel (.vox).</p>
+            <h3 data-i18n="assemblydroid_f_editor">Редактор Sora</h3>
+            <p data-i18n="assemblydroid_f_editor_desc">Підсвічування інструкцій, регістрів, міток та директив, автодоповнення та панель Problems</p>
           </div>
           <div class="app-feature">
-            <h3>Багатошарові проєкти</h3>
-            <p>Робота з шарами вокселів (видимість, прозорість, копіювання), налаштування колірних палітр та матеріалів.</p>
+            <h3 data-i18n="assemblydroid_f_templates">5 шаблонів проєктів</h3>
+            <p data-i18n="assemblydroid_f_templates_desc">Швидкий старт для ARM64, ARM32, Thumb-2, x86 FASM 2 та x86-64 FASM 2 з прикладами</p>
           </div>
           <div class="app-feature">
-            <h3>Інструменти моделювання</h3>
-            <p>Пензель, екструзія, заміна кольору, виділення рамкою (Box Selection) та буфер обміну (Copy/Paste).</p>
+            <h3 data-i18n="assemblydroid_f_docs">Офлайн-довідка</h3>
+            <p data-i18n="assemblydroid_f_docs_desc">Вбудований український посібник з архітектур, інструкцій, конвенцій AAPCS64/32 та прикладів</p>
           </div>
           <div class="app-feature">
-            <h3>Історія змін Undo / Redo</h3>
-            <p>Стек історії для скасування та повторення будь-яких редагувань, штрихів та змін шарів без втрати даних.</p>
+            <h3 data-i18n="assemblydroid_f_offline">100% автономність</h3>
+            <p data-i18n="assemblydroid_f_offline_desc">Працює локально: не потребує доступу до Інтернету, сторонніх сервісів чи прав суперкористувача</p>
           </div>
         </div>
       </div>
