@@ -1,58 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="512" height="512">
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 108 108">
   <defs>
     <clipPath id="squircle">
       <rect x="0" y="0" width="108" height="108" rx="24" ry="24"/>
     </clipPath>
-    <linearGradient id="bgLLM" x1="0" y1="0" x2="108" y2="108" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#141124"/>
-      <stop offset="50%" stop-color="#1A1538"/>
-      <stop offset="100%" stop-color="#0A0814"/>
+    <!-- Authentic background linear gradient from LocalLLM ic_launcher_background.xml -->
+    <linearGradient id="llmBgGrad" x1="16" y1="8" x2="92" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5B2BD6"/>
+      <stop offset="0.55" stop-color="#3E1C9E"/>
+      <stop offset="1" stop-color="#23105E"/>
     </linearGradient>
-    <linearGradient id="synapseGrad" x1="20" y1="20" x2="88" y2="88" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#6366F1"/>
-      <stop offset="50%" stop-color="#A855F7"/>
-      <stop offset="100%" stop-color="#EC4899"/>
-    </linearGradient>
-    <linearGradient id="coreGlow" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#818CF8"/>
-    </linearGradient>
-    <filter id="neon" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3.5" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
+    <!-- Radial highlight from LocalLLM ic_launcher_background.xml -->
+    <radialGradient id="llmRadialGrad" cx="42" cy="36" r="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
   </defs>
+
   <g clip-path="url(#squircle)">
-    <rect width="108" height="108" fill="url(#bgLLM)"/>
-    
-    <!-- Cyber neural circuit grid -->
-    <path d="M18 54L34 54M74 54L90 54M54 18L54 34M54 74L54 90" stroke="#6366F1" stroke-width="1.2" stroke-opacity="0.3"/>
-    <circle cx="54" cy="54" r="40" fill="none" stroke="#A855F7" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="4 6"/>
-    
-    <!-- Neural Node Connections -->
-    <g stroke="url(#synapseGrad)" stroke-width="2" stroke-linecap="round" filter="url(#neon)">
-      <line x1="36" y1="36" x2="54" y2="44"/>
-      <line x1="72" y1="36" x2="54" y2="44"/>
-      <line x1="36" y1="36" x2="32" y2="64"/>
-      <line x1="72" y1="36" x2="76" y2="64"/>
-      <line x1="54" y1="44" x2="54" y2="72"/>
-      <line x1="32" y1="64" x2="54" y2="72"/>
-      <line x1="76" y1="64" x2="54" y2="72"/>
-      <!-- Terminal prompt symbol inside core -->
-      <path d="M48 48L53 53L48 58M56 58H62" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
-    </g>
+    <!-- Violet background with light reflection -->
+    <rect width="108" height="108" fill="url(#llmBgGrad)"/>
+    <rect width="108" height="108" fill="url(#llmRadialGrad)"/>
 
-    <!-- Synapse Nodes -->
-    <circle cx="36" cy="36" r="4.5" fill="#38BDF8"/>
-    <circle cx="72" cy="36" r="4.5" fill="#818CF8"/>
-    <circle cx="54" cy="44" r="4" fill="#C084FC"/>
-    <circle cx="32" cy="64" r="4" fill="#E879F9"/>
-    <circle cx="76" cy="64" r="4" fill="#F472B6"/>
-    <circle cx="54" cy="72" r="5" fill="#60A5FA"/>
+    <!-- Authentic foreground from LocalLLM ic_launcher_foreground.xml -->
+    <!-- Speech bubble -->
+    <path d="M40 26h28a12 12 0 0 1 12 12v16a12 12 0 0 1 -12 12h-24l-12 12l6 -12h-2a12 12 0 0 1 -12 -12v-16a12 12 0 0 1 12 -12z" fill="#FFF7F4FF"/>
 
-    <!-- Inner sparkles -->
-    <circle cx="36" cy="36" r="1.8" fill="#FFFFFF"/>
-    <circle cx="72" cy="36" r="1.8" fill="#FFFFFF"/>
-    <circle cx="54" cy="72" r="2" fill="#FFFFFF"/>
+    <!-- Pins, drawn before the body so their ends tuck under it -->
+    <path d="M40 40.5h6M40 46h6M40 51.5h6M62 40.5h6M62 46h6M62 51.5h6M48.5 32v6M54 32v6M59.5 32v6M48.5 54v6M54 54v6M59.5 54v6" fill="none" stroke="#5B2BD6" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Processor chip body -->
+    <path d="M49 36h10a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5h-10a5 5 0 0 1 -5 -5v-10a5 5 0 0 1 5 -5z" fill="#5B2BD6"/>
+
+    <!-- Orientation dot -->
+    <path d="M49.4 39.6a2.1 2.1 0 1 0 0 4.2a2.1 2.1 0 1 0 0 -4.2z" fill="#FFF7F4FF"/>
   </g>
 </svg>
