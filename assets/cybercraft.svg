@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 108 108">
+  <defs>
+    <clipPath id="squircle">
+      <rect x="0" y="0" width="108" height="108" rx="24" ry="24"/>
+    </clipPath>
+    <radialGradient id="neonGlow" cx="54" cy="54" r="45" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#CCFF33" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#CCFF33" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="nodeMask">
+      <rect width="108" height="108" fill="#FFFFFF"/>
+      <circle cx="54" cy="54" r="3.83" fill="#000000"/>
+      <circle cx="54" cy="27.6" r="3.83" fill="#000000"/>
+      <circle cx="54" cy="80.4" r="3.83" fill="#000000"/>
+      <circle cx="27.6" cy="54" r="3.83" fill="#000000"/>
+      <circle cx="80.4" cy="54" r="3.83" fill="#000000"/>
+    </mask>
+  </defs>
+
+  <g clip-path="url(#squircle)">
+    <!-- Dark Background -->
+    <rect width="108" height="108" fill="#0A0908"/>
+
+    <!-- Subtle Neon Ambient Glow -->
+    <circle cx="54" cy="54" r="45" fill="url(#neonGlow)"/>
+
+    <!-- Organization Glyph in Cyber Lime Neon -->
+    <g mask="url(#nodeMask)" fill="#CCFF33" stroke="#CCFF33">
+      <!-- Edges -->
+      <line x1="27.6" y1="54" x2="80.4" y2="54" stroke-width="6.05" stroke-linecap="round"/>
+      <line x1="54" y1="27.6" x2="54" y2="80.4" stroke-width="6.05" stroke-linecap="round"/>
+      <line x1="54" y1="27.6" x2="80.4" y2="54" stroke-width="6.05" stroke-linecap="round"/>
+      <line x1="54" y1="80.4" x2="27.6" y2="54" stroke-width="6.05" stroke-linecap="round"/>
+      <!-- Nodes -->
+      <circle cx="54" cy="54" r="9.72" stroke="none"/>
+      <circle cx="54" cy="27.6" r="9.72" stroke="none"/>
+      <circle cx="54" cy="80.4" r="9.72" stroke="none"/>
+      <circle cx="27.6" cy="54" r="9.72" stroke="none"/>
+      <circle cx="80.4" cy="54" r="9.72" stroke="none"/>
+    </g>
+  </g>
+</svg>
