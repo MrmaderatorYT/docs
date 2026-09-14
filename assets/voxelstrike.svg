@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="squircle">
+      <rect x="0" y="0" width="512" height="512" rx="114" ry="114"/>
+    </clipPath>
+    
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="38%" r="72%">
+      <stop offset="0%" stop-color="#191F30"/>
+      <stop offset="55%" stop-color="#0E111C"/>
+      <stop offset="100%" stop-color="#06070B"/>
+    </radialGradient>
+    
+    <!-- Emissive Auras -->
+    <radialGradient id="orangeAura" cx="50%" cy="62%" r="48%">
+      <stop offset="0%" stop-color="#FF5500" stop-opacity="0.42"/>
+      <stop offset="60%" stop-color="#FF3300" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#FF3300" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="cyanCoreGlow" cx="50%" cy="40%" r="38%">
+      <stop offset="0%" stop-color="#00F7FF" stop-opacity="0.65"/>
+      <stop offset="45%" stop-color="#0099FF" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0099FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Orange Voxel Shading -->
+    <linearGradient id="topOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD464"/>
+      <stop offset="100%" stop-color="#FF8A00"/>
+    </linearGradient>
+    <linearGradient id="leftOrange" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF5E24"/>
+      <stop offset="100%" stop-color="#C92000"/>
+    </linearGradient>
+    <linearGradient id="rightOrange" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#BD1B00"/>
+      <stop offset="100%" stop-color="#690900"/>
+    </linearGradient>
+
+    <!-- Luminous Glowing Cyan Core Cube -->
+    <linearGradient id="topCyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#D4FFFF"/>
+      <stop offset="100%" stop-color="#00F0FF"/>
+    </linearGradient>
+    <linearGradient id="leftCyan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#0090FF"/>
+    </linearGradient>
+    <linearGradient id="rightCyan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00D2FF"/>
+      <stop offset="100%" stop-color="#0066CC"/>
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="bloom" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="coreGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="16" result="blur1"/>
+      <feGaussianBlur stdDeviation="6" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#squircle)">
+    <!-- Base Background -->
+    <rect width="512" height="512" fill="url(#bgGrad)"/>
+    
+    <!-- Tactical Hexagonal / Isometric Grid -->
+    <g stroke="#00F0FF" stroke-opacity="0.04" stroke-width="1.2">
+      <!-- Horizontal lines -->
+      <line x1="0" y1="64" x2="512" y2="64"/>
+      <line x1="0" y1="128" x2="512" y2="128"/>
+      <line x1="0" y1="192" x2="512" y2="192"/>
+      <line x1="0" y1="256" x2="512" y2="256"/>
+      <line x1="0" y1="320" x2="512" y2="320"/>
+      <line x1="0" y1="384" x2="512" y2="384"/>
+      <line x1="0" y1="448" x2="512" y2="448"/>
+      <!-- Diagonal 30 deg isometric lines -->
+      <line x1="-100" y1="100" x2="600" y2="504"/>
+      <line x1="-100" y1="200" x2="600" y2="604"/>
+      <line x1="-100" y1="0" x2="600" y2="404"/>
+      <line x1="-100" y1="504" x2="600" y2="100"/>
+      <line x1="-100" y1="404" x2="600" y2="0"/>
+      <line x1="-100" y1="604" x2="600" y2="200"/>
+    </g>
+
+    <!-- Ray-Tracing Light Rays / Bloom -->
+    <circle cx="256" cy="305" r="230" fill="url(#orangeAura)"/>
+    <circle cx="256" cy="205" r="160" fill="url(#cyanCoreGlow)"/>
+
+    <!-- Tactical Reticle HUD Layer (Behind Cubes) -->
+    <g stroke="#00F0FF" stroke-opacity="0.28" fill="none">
+      <!-- Outer HUD Ring with tick segments -->
+      <circle cx="256" cy="256" r="195" stroke-width="1.8" stroke-dasharray="24 12 6 12"/>
+      <circle cx="256" cy="256" r="145" stroke-width="1.2" stroke-dasharray="10 8"/>
+      <circle cx="256" cy="256" r="85" stroke-width="1" stroke-dasharray="4 6"/>
+      
+      <!-- Corner HUD Target Frames -->
+      <path d="M85 130 H120 V95" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M427 130 H392 V95" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M85 382 H120 V417" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M427 382 H392 V417" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Tactical Crosshair Spokes -->
+    <g stroke="#FF5500" stroke-opacity="0.45" stroke-width="2" stroke-linecap="round">
+      <line x1="30" y1="256" x2="70" y2="256"/>
+      <line x1="442" y1="256" x2="482" y2="256"/>
+      <line x1="256" y1="30" x2="256" y2="70"/>
+      <line x1="256" y1="442" x2="256" y2="482"/>
+    </g>
+
+    <!-- 3D Orange Voxel Cubes with Drop Shadow -->
+    <g filter="url(#dropShadow)">
+
+      <g class="voxel-cube">
+        <polygon points="126.0,121.0 172.8,148.0 126.0,175.0 79.2,148.0" fill="url(#topOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+        <polygon points="79.2,148.0 126.0,175.0 126.0,202.0 79.2,175.0" fill="url(#leftOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+        <polygon points="126.0,175.0 172.8,148.0 172.8,175.0 126.0,202.0" fill="url(#rightOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+      </g>
+      <g class="voxel-cube">
+        <polygon points="386.0,121.0 432.8,148.0 386.0,175.0 339.2,148.0" fill="url(#topOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+        <polygon points="339.2,148.0 386.0,175.0 386.0,202.0 339.2,175.0" fill="url(#leftOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+        <polygon points="386.0,175.0 432.8,148.0 432.8,175.0 386.0,202.0" fill="url(#rightOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+      </g>
+      <g class="voxel-cube">
+        <polygon points="169.0,179.0 215.8,206.0 169.0,233.0 122.2,206.0" fill="url(#topOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+        <polygon points="122.2,206.0 169.0,233.0 169.0,260.0 122.2,233.0" fill="url(#leftOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+        <polygon points="169.0,233.0 215.8,206.0 215.8,233.0 169.0,260.0" fill="url(#rightOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+      </g>
+      <g class="voxel-cube">
+        <polygon points="343.0,179.0 389.8,206.0 343.0,233.0 296.2,206.0" fill="url(#topOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+        <polygon points="296.2,206.0 343.0,233.0 343.0,260.0 296.2,233.0" fill="url(#leftOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+        <polygon points="343.0,233.0 389.8,206.0 389.8,233.0 343.0,260.0" fill="url(#rightOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+      </g>
+      <g class="voxel-cube">
+        <polygon points="212.0,238.0 258.8,265.0 212.0,292.0 165.2,265.0" fill="url(#topOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+        <polygon points="165.2,265.0 212.0,292.0 212.0,319.0 165.2,292.0" fill="url(#leftOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+        <polygon points="212.0,292.0 258.8,265.0 258.8,292.0 212.0,319.0" fill="url(#rightOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+      </g>
+      <g class="voxel-cube">
+        <polygon points="300.0,238.0 346.8,265.0 300.0,292.0 253.2,265.0" fill="url(#topOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+        <polygon points="253.2,265.0 300.0,292.0 300.0,319.0 253.2,292.0" fill="url(#leftOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+        <polygon points="300.0,292.0 346.8,265.0 346.8,292.0 300.0,319.0" fill="url(#rightOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+      </g>
+      <g class="voxel-cube">
+        <polygon points="256.0,296.0 302.8,323.0 256.0,350.0 209.2,323.0" fill="url(#topOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+        <polygon points="209.2,323.0 256.0,350.0 256.0,377.0 209.2,350.0" fill="url(#leftOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+        <polygon points="256.0,350.0 302.8,323.0 302.8,350.0 256.0,377.0" fill="url(#rightOrange)" stroke="#FFEAA8" stroke-width="1.3" stroke-linejoin="round"/>
+      </g>
+    </g>
+
+    <!-- Floating Luminous Cyan Power Core -->
+    <g filter="url(#coreGlow)">
+
+      <g class="voxel-cube">
+        <polygon points="256.0,159.0 295.8,182.0 256.0,205.0 216.2,182.0" fill="url(#topCyan)" stroke="#FFFFFF" stroke-width="2.0" stroke-linejoin="round"/>
+        <polygon points="216.2,182.0 256.0,205.0 256.0,228.0 216.2,205.0" fill="url(#leftCyan)" stroke="#FFFFFF" stroke-width="2.0" stroke-linejoin="round"/>
+        <polygon points="256.0,205.0 295.8,182.0 295.8,205.0 256.0,228.0" fill="url(#rightCyan)" stroke="#FFFFFF" stroke-width="2.0" stroke-linejoin="round"/>
+      </g>
+    </g>
+
+    <!-- Laser Sight / Tactical Focus Layer -->
+    <g filter="url(#bloom)">
+      <!-- Vertical laser beam ascending from core -->
+      <line x1="256" y1="65" x2="256" y2="155" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round"/>
+      
+      <!-- Core Targeting Reticle -->
+      <circle cx="256" cy="205" r="5" fill="#FFFFFF"/>
+      <circle cx="256" cy="205" r="10" fill="none" stroke="#00F0FF" stroke-width="2.2"/>
+      
+      <!-- Horizontal laser ticks on core -->
+      <line x1="212" y1="205" x2="230" y2="205" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="282" y1="205" x2="300" y2="205" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- Corner HUD status dots -->
+      <circle cx="85" cy="95" r="3.5" fill="#00F0FF"/>
+      <circle cx="427" cy="95" r="3.5" fill="#00F0FF"/>
+      <circle cx="85" cy="417" r="3.5" fill="#FF5500"/>
+      <circle cx="427" cy="417" r="3.5" fill="#FF5500"/>
+    </g>
+  </g>
+</svg>
