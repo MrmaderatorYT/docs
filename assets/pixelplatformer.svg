@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108">
+  <rect width="108" height="108" rx="24" fill="#0D1117"/>
+  <!-- Neon platforms -->
+  <rect x="18" y="76" width="36" height="8" rx="2" fill="#00E5FF"/>
+  <rect x="58" y="56" width="34" height="8" rx="2" fill="#FF007F"/>
+  <rect x="28" y="36" width="28" height="8" rx="2" fill="#76FF03"/>
+  <!-- Runner figure in jump -->
+  <circle cx="48" cy="22" r="5" fill="#FFFFFF"/>
+  <rect x="45" y="28" width="6" height="12" rx="1" fill="#FFFFFF"/>
+  <path d="M43 32l-4 6m12-6l5 5m-8 3l-3 7m4-7l5 6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+</svg>

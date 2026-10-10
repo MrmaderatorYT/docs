@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108">
+  <rect width="108" height="108" rx="24" fill="#1A1829"/>
+  <!-- Citadel fortress crown -->
+  <path fill="#2E284A" d="M22 84h64V56l-8-8v-6h-6v6h-8v-6h-8v6h-8v-6h-6v6l-8 8z"/>
+  <path fill="#E0A96D" d="M30 84h48V60H30z"/>
+  <path fill="#1A1829" d="M48 84h12V70a6 6 0 0 0-12 0z"/>
+  <path fill="#E0A96D" d="M30 52h8v8h-8zm16 0h8v8h-8zm16 0h8v8h-8zm16 0h8v8h-8z"/>
+  <polygon points="54,20 62,34 46,34" fill="#ECC880"/>
+</svg>

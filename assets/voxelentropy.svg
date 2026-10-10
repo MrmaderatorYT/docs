@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108">
+  <rect width="108" height="108" rx="24" fill="#12131A"/>
+  <!-- Voxel sandbox crucible -->
+  <path d="M26 30h56v14L62 64v16h-16V64L26 44z" fill="#1E202E" stroke="#4B5563" stroke-width="2"/>
+  <!-- Falling voxels -->
+  <rect x="42" y="20" width="6" height="6" fill="#F59E0B"/>
+  <rect x="52" y="16" width="6" height="6" fill="#EF4444"/>
+  <rect x="60" y="22" width="6" height="6" fill="#3B82F6"/>
+  <rect x="48" y="26" width="6" height="6" fill="#10B981"/>
+  <!-- Liquid reaction inside -->
+  <path d="M36 46h36l-8 16H44z" fill="#F97316"/>
+  <path d="M46 64h16v14h-16z" fill="#3B82F6"/>
+</svg>
