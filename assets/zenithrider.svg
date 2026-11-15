@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="512" height="512">
+  <defs>
+    <clipPath id="squircleZenith">
+      <rect x="0" y="0" width="108" height="108" rx="24" ry="24"/>
+    </clipPath>
+    <linearGradient id="skyZenith" x1="54" y1="0" x2="54" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1B2A6B"/>
+      <stop offset="50%" stop-color="#2C7F97"/>
+      <stop offset="100%" stop-color="#BDF2DC"/>
+    </linearGradient>
+    <filter id="shadowZenith" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#squircleZenith)">
+    <rect width="108" height="108" fill="url(#skyZenith)"/>
+
+    <!-- Sun with glowing atmosphere rings -->
+    <circle cx="58" cy="42" r="26" fill="#FFF6D6" fill-opacity="0.18"/>
+    <circle cx="58" cy="42" r="18" fill="#FFF6D6" fill-opacity="0.3"/>
+    <circle cx="58" cy="42" r="12" fill="#FFFFE0"/>
+
+    <!-- Mountain ridges (layered) -->
+    <path fill="#6CC7BC" d="M0 72L14 56L26 65L42 49L58 66L72 54L90 69L108 58V108H0Z"/>
+    <path fill="#2F8F8C" d="M0 82L12 71L22 78L36 66L50 80L66 69L84 82L98 73L108 78V108H0Z"/>
+
+    <!-- Snow slope rail line -->
+    <path d="M12 62C30 76 68 84 96 98" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.7"/>
+
+    <!-- Acrobat Glider soaring in the sky -->
+    <g filter="url(#shadowZenith)">
+      <path d="M42 38L56 30L52 42L44 44Z" fill="#FFFFFF"/>
+      <path d="M42 38L30 35L38 42Z" fill="#FDE047"/>
+      <!-- Energy stream tail -->
+      <path d="M30 35C22 36 16 42 12 46" stroke="#FDE047" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="2 2"/>
+    </g>
+  </g>
+</svg>

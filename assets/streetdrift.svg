@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="512" height="512">
+  <defs>
+    <clipPath id="squircleDrift">
+      <rect x="0" y="0" width="108" height="108" rx="24" ry="24"/>
+    </clipPath>
+    <linearGradient id="bgDrift" x1="0" y1="0" x2="0" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#180B2B"/>
+      <stop offset="50%" stop-color="#2D114D"/>
+      <stop offset="100%" stop-color="#0F051D"/>
+    </linearGradient>
+    <linearGradient id="roadGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E1633"/>
+      <stop offset="100%" stop-color="#090514"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#EC4899" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#squircleDrift)">
+    <rect width="108" height="108" fill="url(#bgDrift)"/>
+
+    <!-- Retro Neon Grid Horizon -->
+    <path d="M0 56H108" stroke="#EC4899" stroke-width="1.5"/>
+    <polygon points="18,108 38,56 70,56 90,108" fill="url(#roadGrad)"/>
+    <path d="M54 56L54 108" stroke="#FDE047" stroke-width="2" stroke-dasharray="6 6"/>
+
+    <!-- Neon City Skyline Silhouettes -->
+    <rect x="22" y="38" width="12" height="18" fill="#3B0764"/>
+    <rect x="38" y="32" width="16" height="24" fill="#581C87"/>
+    <rect x="58" y="28" width="14" height="28" fill="#3B0764"/>
+    <rect x="76" y="36" width="10" height="20" fill="#581C87"/>
+
+    <!-- Drift Smoke / Tire skid trails -->
+    <path d="M30 92C44 86 64 88 78 82" stroke="#06B6D4" stroke-width="3" stroke-linecap="round" stroke-opacity="0.7"/>
+    <path d="M36 96C50 90 70 92 84 86" stroke="#06B6D4" stroke-width="3" stroke-linecap="round" stroke-opacity="0.7"/>
+
+    <!-- Voxel Sports Car in Drift Angle -->
+    <g filter="url(#neonGlow)">
+      <!-- Car Body (Isometric/voxel blocky) -->
+      <polygon points="40,70 66,62 82,74 56,82" fill="#F43F5E"/>
+      <!-- Cabin / Windshield -->
+      <polygon points="48,64 64,59 74,67 58,72" fill="#06B6D4"/>
+      <!-- Headlights / Tail light trail -->
+      <polygon points="39,71 42,70 41,75 38,76" fill="#FDE047"/>
+      <polygon points="80,73 83,75 80,78 77,76" fill="#F43F5E"/>
+    </g>
+  </g>
+</svg>
