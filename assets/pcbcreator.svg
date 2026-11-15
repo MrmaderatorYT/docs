@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108">
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 108 108">
   <rect width="108" height="108" rx="24" fill="#102A2B"/>
-  <path stroke="#40D6B5" stroke-width="3" fill="#183E3D" d="M35 35h38v38H35z" />
-  <path stroke="#40D6B5" stroke-width="3" fill="none" stroke-linecap="round" d="M42 25v10m12-10v10m12-10v10M42 73v10m12-10v10m12-10v10M25 42h10m-10 12h10m-10 12h10m38-24h10m-10 12h10m-10 12h10" />
-  <path stroke="#F1CB76" stroke-width="3" fill="none" stroke-linecap="round" d="M43 63V45h19v9H52v10h13" />
+  <path stroke="#40D6B5" stroke-width="3" fill="#183E3D" stroke-linejoin="round" d="M35,35 L73,35 L73,73 L35,73 Z"/>
+  <path stroke="#40D6B5" stroke-width="3" stroke-linecap="round" fill="none" d="M42,25 L42,35 M54,25 L54,35 M66,25 L66,35 M42,73 L42,83 M54,73 L54,83 M66,73 L66,83 M25,42 L35,42 M25,54 L35,54 M25,66 L35,66 M73,42 L83,42 M73,54 L83,54 M73,66 L83,66"/>
+  <path stroke="#F1CB76" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M43,63 L43,45 L62,45 L62,54 L52,54 L52,64 L65,64"/>
 </svg>
