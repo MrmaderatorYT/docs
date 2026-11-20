@@ -28,4 +28,4 @@
 ## 5. Контакти
 
 - Email: [cybercraftstudiopro@gmail.com](mailto:cybercraftstudiopro@gmail.com)
-- GitHub: [CyberCraft Studio](https://github.com/MrmaderatorYT)
+- GitHub: [Coffee & Crops](https://github.com/MrmaderatorYT/coffee-and-crops)

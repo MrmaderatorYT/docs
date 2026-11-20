@@ -39,4 +39,4 @@
 ## 7. Контакти
 
 - Email: [cybercraftstudiopro@gmail.com](mailto:cybercraftstudiopro@gmail.com)
-- GitHub: [CyberCraft Studio](https://github.com/MrmaderatorYT)
+- GitHub: [TraceDroid](https://github.com/MrmaderatorYT/TraceDroid)

@@ -42,4 +42,4 @@
 ## 8. Контакти
 
 - Email: [cybercraftstudiopro@gmail.com](mailto:cybercraftstudiopro@gmail.com)
-- GitHub: [CyberCraft Studio](https://github.com/MrmaderatorYT)
+- GitHub: [Sprig](https://github.com/MrmaderatorYT/Sprig)

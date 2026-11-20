@@ -38,4 +38,4 @@
 ## 7. Контакти
 
 - Email: [cybercraftstudiopro@gmail.com](mailto:cybercraftstudiopro@gmail.com)
-- GitHub: [CyberCraft Studio](https://github.com/MrmaderatorYT)
+- GitHub: [Maple](https://github.com/MrmaderatorYT/Maple)
