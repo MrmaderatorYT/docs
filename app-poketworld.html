@@ -31,7 +31,8 @@
     .app-feature h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; }
     .app-feature p { font-size: 0.88rem; margin: 0; }
     .screenshots-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .screenshot { aspect-ratio: 9/16; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: var(--text-secondary); font-size: 0.85rem; }
+    .screenshot { aspect-ratio: 9/16; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: var(--text-secondary); font-size: 0.85rem; overflow: hidden; }
+    .screenshot img { width: 100%; height: 100%; object-fit: cover; }
     @media (max-width: 768px) {
       .app-hero { flex-direction: column; align-items: center; text-align: center; }
       .app-hero-links { justify-content: center; }
@@ -91,7 +92,7 @@
         <div class="app-hero-info">
           <span class="app-badge badge-dev" data-i18n="badge_dev">Розробка</span>
           <h1>Pocket World</h1>
-          <p class="app-tagline" data-i18n="poketworld_desc">2D-пісочниця симуляції світу та народів для Android. Процедурний світ, C++20 рушій, фізика води та лави, пожежі, еволюція поселень та демографія.</p>
+          <p class="app-tagline" data-i18n="poketworld_tagline">Масштабна 2D-пісочниця симуляції живого світу, міської економіки та державних служб на LibGDX і C++20: карта 2560×2560, 8 областей, живі підприємства, ТЕС/ГЕС/АЕС/СЕС, погода та служби порятунку.</p>
           <div class="app-hero-links">
             <a href="#" class="btn btn-primary link-disabled">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5V3.5c0-.85.65-1.3 1.25-.97l14.5 8.5c.6.35.6.95 0 1.3L4.25 20.97c-.6.33-1.25-.12-1.25-.47zM16 12l-10-5.8v11.6L16 12zm1-1l2.5 1.5L17 14V11z"/></svg>
@@ -107,37 +108,29 @@
       </div>
 
       <div class="app-section">
-        <h2>Про гру</h2>
-        <p>Pocket World — це масштабна мобільна 2D-пісочниця симуляції живого світу на базі LibGDX та високопродуктивного нативного C++20 движка. Гравці створюють процедурно згенеровані планети від 64² до 1024² та спостерігають за життям істот, створенням поселень та еволюцією цивілізацій.</p>
-        <p>Симуляція моделює рельєф, вирівняні природні пласти, течії води та лави, поширення пожеж, згасання дощем, а також детальні картки громадян і будівель із повною демографічною історією.</p>
+        <h2 data-i18n="poketworld_about_title">Про гру</h2>
+        <p data-i18n="poketworld_about_p1">Pocket World — це масштабна мобільна 2D-пісочниця симуляції держави, міст та економіки на базі LibGDX та нативного C++20 рушія. Оновлений стандартний світ 2560×2560 (карта ×100) містить вісім обласних центрів, ділянки по 6 соток, заводи на гектар, фізичні доставки, автобуси та сімейні бюджети.</p>
+        <p data-i18n="poketworld_about_p2">Кожне підприємство на карті живе власним економічним життям (запаси, собівартість, зарплати, податки, прибуток, експорт у ZIP/CSV). Симуляція включає енергетику (ТЕС, ГЕС, ГРЕС, СЕС, АЕС, ТЕЦ, ВЕС), погоду та якість повітря, епідемії, карантин, виїзди швидкої, пожежних, поліції та КОРД.</p>
       </div>
 
       <div class="app-section">
-        <h2>Можливості</h2>
+        <h2 data-i18n="poketworld_features_title">Можливості</h2>
         <div class="app-features-grid">
           <div class="app-feature">
-            <h3>Процедурний світ</h3>
-            <p>Генерація рельєфу: океани, мілини, пляжі, ліси, гори та снігові вершини з унікальними seed-кодами від 64² до 1024².</p>
+            <h3 data-i18n="poketworld_f1_title">Карта ×100 та 8 обласних центрів</h3>
+            <p data-i18n="poketworld_f1_desc">Оновлена піксельна карта 2560×2560 з рельєфними уступами, шарами висоти, ділянками, дорогами та міськими кварталами.</p>
           </div>
           <div class="app-feature">
-            <h3>Нативний C++20 симуляційний рушій</h3>
-            <p>Високопродуктивна SoA-архітектура та lock-free 3-слотовий знімок для бездоганних 60 FPS рендерингу.</p>
+            <h3 data-i18n="poketworld_f2_title">Живі підприємства та міська економіка</h3>
+            <p data-i18n="poketworld_f2_desc">Власні баланси компаній, фізичні доставки, будівництво по етапах, поїздки на роботу, грошовий аудит та експорт у ZIP із CSV.</p>
           </div>
           <div class="app-feature">
-            <h3>Гідродинаміка та клітинні автомати</h3>
-            <p>Динамічна течія води й лави, перетворення лави на камінь, поширення пожеж, стихійні лиха та гасіння дощем.</p>
+            <h3 data-i18n="poketworld_f3_title">Енергетика та державні служби</h3>
+            <p data-i18n="poketworld_f3_desc">ТЕС, ГЕС, ГРЕС, СЕС, АЕС, ТЕЦ, ВЕС; медицина, вакцинація, карантин, швидка, пожежні, хімзахист, поліція та КОРД із технікою.</p>
           </div>
           <div class="app-feature">
-            <h3>Симуляція життя та демографія</h3>
-            <p>Люди народжують дітей, старіють, будують житло, працюють та спадковують походження (європейське, азійське, африканське).</p>
-          </div>
-          <div class="app-feature">
-            <h3>Геополітика та мікроменеджмент</h3>
-            <p>Формування держав, кордони, податки, війна й мир, будівництво доріг, СЕЗ та поіменний огляд громадян.</p>
-          </div>
-          <div class="app-feature">
-            <h3>Літопис світу</h3>
-            <p>Автоматична стрічка подій: заснування міст, шлюби, смерті, війни та наукові ступені зберігаються у світі.</p>
+            <h3 data-i18n="poketworld_f4_title">Погода, суспільство та C++20 рушій</h3>
+            <p data-i18n="poketworld_f4_desc">Вітер, хмари, дощ, якість повітря, особиста статистика громадян, петиції й страйки на високопродуктивному C++20 рушії.</p>
           </div>
         </div>
       </div>
