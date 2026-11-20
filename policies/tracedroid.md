@@ -1,6 +1,6 @@
 # Політика конфіденційності — TraceDroid
 
-Додаток **TraceDroid** (ідентифікатор пакета: `com.ccs.chronosec`).  
+Додаток **TraceDroid** (ідентифікатор пакета: `com.ccs.tracedroid`).  
 Останнє оновлення: 15 листопада 2026.
 
 Цей документ пояснює принципи обробки даних у додатку **TraceDroid** (Offline Digital Forensics & Incident Response).
