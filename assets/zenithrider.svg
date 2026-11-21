@@ -1,40 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 108 108">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="512" height="512">
   <defs>
-    <linearGradient id="zenithSky" x1="54" y1="0" x2="54" y2="108" gradientUnits="userSpaceOnUse">
-      <stop offset="0.0" stop-color="#FF1B2A6B"/>
-      <stop offset="0.5" stop-color="#FF2C7F97"/>
-      <stop offset="1.0" stop-color="#FFBDF2DC"/>
+    <linearGradient id="bgGrad" x1="54" y1="0" x2="54" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1B2A6B"/>
+      <stop offset="50%" stop-color="#2C7F97"/>
+      <stop offset="100%" stop-color="#BDF2DC"/>
     </linearGradient>
-    <clipPath id="squircleZenith">
-      <rect width="108" height="108" rx="24" fill="#fff"/>
+    <clipPath id="clipIcon">
+      <rect width="108" height="108" rx="24"/>
     </clipPath>
   </defs>
-  <g clip-path="url(#squircleZenith)">
-    <rect width="108" height="108" fill="url(#zenithSky)"/>
-    <path fill="#1EFFF6D6" d="M58,44m-27,0a27,27 0,1 1,54 0a27,27 0,1 1,-54 0"/>
-    <path fill="#30FFF6D6" d="M58,44m-19,0a19,19 0,1 1,38 0a19,19 0,1 1,-38 0"/>
-    <path fill="#FFFFF8E1" d="M58,44m-13,0a13,13 0,1 1,26 0a13,13 0,1 1,-26 0"/>
-    <path fill="#FF6CC7BC" d="M0,74L14,58L26,67L42,51L58,68L72,56L90,71L108,60L108,108L0,108z"/>
-    <path fill="#FF2F8F8C" d="M0,84L12,73L22,80L36,68L50,82L66,71L84,84L98,75L108,80L108,108L0,108z"/>
-    <path fill="#CCFFFFFF" d="M27,31l1.3,-2.6l1.3,2.6l-1.3,2.6z"/>
-    <path fill="#CCFFFFFF" d="M82,27l1.2,-2.4l1.2,2.4l-1.2,2.4z"/>
-    <path fill="#99FFFFFF" d="M36,43l0.9,-1.8l0.9,1.8l-0.9,1.8z"/>
-    <path fill="#99FFFFFF" d="M79,40l0.9,-1.8l0.9,1.8l-0.9,1.8z"/>
-    <path fill="#FF0E1430" d="M0,89C30,78 78,78 108,87L108,108L0,108z"/>
-    <path fill="#FF0E1430" d="M44,84L44,68A10,10 0,0 1,64 68L64,84L59.5,84L59.5,68A5.5,5.5 0,0 0,48.5 68L48.5,84z"/>
-    <path fill="#FF0E1430" d="M42,67h5v2.4h-5z M61,67h5v2.4h-5z"/>
-    <path fill="#FF0E1430" d="M74.5,57L77.5,65L75,72L72,64z"/>
-    <path fill="#FF0E1430" d="M81,67l1.6,4l-1.3,3.2l-1.6,-3.6z"/>
-    <path fill="#FF0E1430" d="M33,63L35.5,70L33.8,75L31,69z"/>
-    <path fill="#FF0E1430" d="M24,86L27,73L30,85z M84,85L86.6,74L89,86z"/>
-    <path stroke="#FFFF6B6B" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M58,47C50,52.5 43,44.5 35,48.5C30,51 27,55 21.5,52.5"/>
+  <g clip-path="url(#clipIcon)">
+    <!-- Background -->
+    <rect width="108" height="108" fill="url(#bgGrad)"/>
+    <path fill="#FFF6D6" fill-opacity="0.118" d="M58,44m-27,0a27,27 0,1 1,54 0a27,27 0,1 1,-54 0"/>
+    <path fill="#FFF6D6" fill-opacity="0.188" d="M58,44m-19,0a19,19 0,1 1,38 0a19,19 0,1 1,-38 0"/>
+    <path fill="#FFF8E1" d="M58,44m-13,0a13,13 0,1 1,26 0a13,13 0,1 1,-26 0"/>
+    <path fill="#6CC7BC" d="M0,74L14,58L26,67L42,51L58,68L72,56L90,71L108,60L108,108L0,108z"/>
+    <path fill="#2F8F8C" d="M0,84L12,73L22,80L36,68L50,82L66,71L84,84L98,75L108,80L108,108L0,108z"/>
+    <path fill="#FFFFFF" fill-opacity="0.8" d="M27,31l1.3,-2.6l1.3,2.6l-1.3,2.6z"/>
+    <path fill="#FFFFFF" fill-opacity="0.8" d="M82,27l1.2,-2.4l1.2,2.4l-1.2,2.4z"/>
+    <path fill="#FFFFFF" fill-opacity="0.6" d="M36,43l0.9,-1.8l0.9,1.8l-0.9,1.8z"/>
+    <path fill="#FFFFFF" fill-opacity="0.6" d="M79,40l0.9,-1.8l0.9,1.8l-0.9,1.8z"/>
+    <!-- Foreground -->
+    <path fill="#0E1430" d="M0,89C30,78 78,78 108,87L108,108L0,108z"/>
+    <path fill="#0E1430" d="M44,84L44,68A10,10 0,0 1,64 68L64,84L59.5,84L59.5,68A5.5,5.5 0,0 0,48.5 68L48.5,84z"/>
+    <path fill="#0E1430" d="M42,67h5v2.4h-5z M61,67h5v2.4h-5z"/>
+    <path fill="#0E1430" d="M74.5,57L77.5,65L75,72L72,64z"/>
+    <path fill="#0E1430" d="M81,67l1.6,4l-1.3,3.2l-1.6,-3.6z"/>
+    <path fill="#0E1430" d="M33,63L35.5,70L33.8,75L31,69z"/>
+    <path fill="#0E1430" d="M24,86L27,73L30,85z M84,85L86.6,74L89,86z"/>
+    <path fill="none" stroke="#FF6B6B" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" d="M58,47C50,52.5 43,44.5 35,48.5C30,51 27,55 21.5,52.5"/>
     <g transform="translate(55, 30) rotate(160)">
-      <path stroke="#FF0E1430" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M-11,0.6Q0,2.6 11,-0.6"/>
-      <path stroke="#FF0E1430" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M-4,-0.5L-1.6,-6L0.5,-9.2"/>
-      <path stroke="#FF0E1430" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M4.6,-1L3.2,-6L0.5,-9.2"/>
-      <path stroke="#FF0E1430" stroke-width="4.1" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M0.5,-9.2L2.5,-16"/>
-      <path stroke="#FF0E1430" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M2.3,-15L-3.2,-12"/>
-      <path fill="#FF0E1430" d="M3.6,-19.3m-2.8,0a2.8,2.8 0,1 1,5.6 0a2.8,2.8 0,1 1,-5.6 0"/>
+      <path fill="none" stroke="#0E1430" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" d="M-11,0.6Q0,2.6 11,-0.6"/>
+      <path fill="none" stroke="#0E1430" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" d="M-4,-0.5L-1.6,-6L0.5,-9.2"/>
+      <path fill="none" stroke="#0E1430" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" d="M4.6,-1L3.2,-6L0.5,-9.2"/>
+      <path fill="none" stroke="#0E1430" stroke-width="4.1" stroke-linecap="round" stroke-linejoin="round" d="M0.5,-9.2L2.5,-16"/>
+      <path fill="none" stroke="#0E1430" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M2.3,-15L-3.2,-12"/>
+      <path fill="#0E1430" d="M3.6,-19.3m-2.8,0a2.8,2.8 0,1 1,5.6 0a2.8,2.8 0,1 1,-5.6 0"/>
     </g>
   </g>
 </svg>
